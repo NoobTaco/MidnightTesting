@@ -65,8 +65,10 @@ Scenario 2: [ ] Blocked (Cannot access game at the moment; in-game validation pe
 
 ---
 
+
 ## Date Tested
-[Date]
+2025-10-03
+
 
 ## Tester
-[Name/Handle]
+NoobTaco
