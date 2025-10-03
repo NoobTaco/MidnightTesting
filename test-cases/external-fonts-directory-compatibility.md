@@ -26,6 +26,13 @@ Verify that the addon and game use the default World of Warcraft fonts when no c
 #### Notes
 - [Add any observations or screenshots.]
 
+##### Before Screenshots
+![Default WoW Fonts - Login Screen](images/external-fonts-before.png)
+
+![Default WoW Fonts - Game Menu](images/external-fonts-before-menu.png)
+
+![Default WoW Fonts - System Menu](images/external-fonts-before-system.png)
+
 ---
 
 ### Scenario 2: Replace Fonts Directory with Custom Fonts
