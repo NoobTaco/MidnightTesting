@@ -1,9 +1,18 @@
 ### Large Gathering Spaces
 There are great large areas available in the housing system, suitable for hosting large gatherings, social events, or shows.
+Seating
+* 98 seats for the audiance.
+* 15 seats in the band pit
+The stage is large and the curtains move.
+
 
 #### Example Screenshots
 ![Large Gathering Area 1](images/Screenshot%202025-10-03%20132647.png)
-![Large Gathering Area 2](images/Screenshot%202025-10-03%20132654.png)
+
+### Plot Layout
+![Full map of zone](images/Screenshot%202025-10-03%20132654.png)
+![Better view of plots](images/plots-2025-10-03.png)
+
 # Housing Information Discoveries
 
 This document is for tracking discoveries, notes, and findings related to the new Housing system in World of Warcraft: Midnight.
