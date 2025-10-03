@@ -18,11 +18,10 @@ Verify that the addon and game use the default World of Warcraft fonts when no c
 - All UI and addon text should use the default World of Warcraft fonts.
 
 #### Actual Result
-- Font replacement works for the System Menu and Options screen (see screenshots below).
-- Unable to test in-game font replacement as the server is currently down. Will update this section once in-game testing is possible.
+- Default fonts are as expected. All UI and addon text use the default World of Warcraft fonts.
 
 #### Status
-- [ ] Open (Need more steps for full in-game validation)
+Scenario 1: [x] Pass
 
 #### Notes
 - [Add any observations or screenshots.]
@@ -46,10 +45,12 @@ Verify that the addon and game use the default World of Warcraft fonts when no c
 - All UI and addon text should now use the new custom fonts provided in the external fonts directory.
 
 #### Actual Result
-- [Document what fonts are shown.]
+- Font replacement works for the System Menu and Options screen (see screenshots below).
+- Unable to test in-game font replacement as the server is currently down. Will update this section once in-game testing is possible.
+
 
 #### Status
-- [ ] Pass / [ ] Fail / [ ] Blocked
+Scenario 2: [ ] Blocked (Cannot access game at the moment; in-game validation pending)
 
 
 
