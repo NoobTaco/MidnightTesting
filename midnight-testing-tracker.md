@@ -50,7 +50,7 @@ This document tracks testing progress for addon features and game features in pr
   - [ ] External fonts directory compatibility
   - [ ] Custom font loading and validation
   - [ ] Font fallback mechanisms
-  - [ ] [External fonts directory compatibility](test-cases/external-fonts-directory-compatibility.md)
+  - [ ] [External fonts directory compatibility](test-cases/external-fonts-directory-compatibility.md) _(Open, system font replacement working, in-game pending)_
 - [ ] **External Fonts Directory Testing**
   - [ ] Font file detection in external directories
   - [ ] Font registration with LibSharedMedia
