@@ -230,80 +230,157 @@ This document tracks the compatibility status of existing addons with the World 
 ### All Other Addons (Alphabetical)
 - [ ] **Addon Update Notifications** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
 - [ ] **Already Known?** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **AskMrRobot** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Better Fishing** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Better Wardrobe and Transmog** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **BetterCharacterPanel** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Bountiful Delves Helper** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **BtWLoadouts** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Buffet** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Can I Mog It?** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Capping Battleground Timers** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **CausesedDB** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Chat Sound Customizer (CSC)** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Chattynator** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Collectionator** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Collector's Bounty Helper** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Cursor Ring** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **DMF Quest** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Decursive  -Ace3-** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Delve Companion** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Dialogue UI** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Doom_CooldownPulse** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Dragon Rider** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Farmer** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **GSE: Sequences, Variables, Macros** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **GSE:SLG-Single-Button Assistant Suite** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **GTFO** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **GreenWall** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Guild Roster Manager (GRM)** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Hekili Healers** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Hekili Priority Helper** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **InFlight Taxi Timer** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Incognito Resurrected** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **ItemVersion** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Key Master** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Krowi's Extended Vendor UI** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **LiteMount** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Macro Toolkit** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **MinimapButtonBag Reborn (MBB Reborn)** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Myslot** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Nameplate Scrolling Combat Text** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **New Openables - Continued** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Patron Orders Helper** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Pawn** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **PeaversAlwaysSquare** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **PeaversCommons** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Last Tested:*
+
 - [ ] **PeaversTalents** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **PeaversTalentsData** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Pet Battle Scripts** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Plumber** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Postal** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Premade Groups Filter** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Pretty Reputation** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **RGX | Simple Quest Plates!** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Range Color Skills** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Rematch** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Rematch_TSMPetValues** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **RestedXP Guide** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Shotta** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Silence Talking Heads** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **SilverDragon - Rare Scanner** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Simulationcraft** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Stat Priority** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **Talent Tree Tweaks | TWW** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **TipTac Reborn** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **TokenTransmogTooltips** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WIM (WoW Instant Messenger) v3** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WeeklyKnowledge** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WeeklyRewards - Multi-character Brewfest, K'aresh, Great Vault and Weekly Progress Tracking** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WoWVoxPacks (Neural2_C): BigWigs Countdown** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WoWVoxPacks (Neural2_C): BigWigs_Voice** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WoWVoxPacks (Neural2_C): SharedMedia_Causese** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **WoWthing Collector** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **XIV_Databar Continued** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **idTip** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
+
 - [ ] **oRA3** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:*
+  - *Last Tested:*
 
 ---
 

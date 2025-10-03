@@ -45,15 +45,22 @@ This document tracks testing progress for addon features and game features in pr
 
 #### **Font and Media Systems**
 - [ ] **LibSharedMedia Integration**
+  - _For all LibSharedMedia integration tests, we will use the NoobTacoUI-Media (NTUI-media) addon as the primary test media source. This ensures consistent, real-world testing of custom fonts, audio, and graphics. See [NTUI-media LSM Integration Test Case](test-cases/ntui-media-lsm-integration.md) for detailed steps._
   - [ ] Font replacement functionality
   - [ ] External fonts directory compatibility
   - [ ] Custom font loading and validation
   - [ ] Font fallback mechanisms
+  - [ ] [External fonts directory compatibility](test-cases/external-fonts-directory-compatibility.md)
 - [ ] **External Fonts Directory Testing**
   - [ ] Font file detection in external directories
   - [ ] Font registration with LibSharedMedia
   - [ ] Cross-addon font sharing
   - [ ] Font caching and performance impact
+- [ ] **External Icons Directory Testing**
+  - [ ] [External ICONS directory compatibility (TC-002)](test-cases/external-icons-directory-compatibility.md)
+  - [ ] Icon file detection and registration
+  - [ ] Cross-addon icon sharing
+  - [ ] Icon caching and performance impact
 
 #### **Housing System Addons**
 - [ ] **Housing Management Addons**
