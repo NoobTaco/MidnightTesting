@@ -1,0 +1,12 @@
+- name: testing-request
+  color: "1E90FF"
+  description: "Request for new feature, addon, or scenario to be tested."
+- name: suggestion
+  color: "FFD700"
+  description: "General suggestion for improvement or addition."
+- name: feedback
+  color: "32CD32"
+  description: "Feedback about the testing process, documentation, or findings."
+- name: question
+  color: "8A2BE2"
+  description: "General question about the project or testing."

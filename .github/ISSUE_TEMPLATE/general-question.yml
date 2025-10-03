@@ -1,0 +1,26 @@
+name: "Testing Request"
+description: "Request a new feature, addon, or scenario to be added to the testing list."
+title: "[Testing Request] <short summary>"
+labels: [testing-request, suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Testing Request
+        Please provide your request below. If this is a feature or addon to test, it will be added to the tracker.
+  - type: textarea
+    id: request
+    attributes:
+      label: Request
+      description: What feature, addon, or scenario would you like to see tested?
+      placeholder: "Describe your testing request here."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (optional)
+      description: Any relevant context, links, or screenshots
+      placeholder: "Add any extra details here."
+    validations:
+      required: false
