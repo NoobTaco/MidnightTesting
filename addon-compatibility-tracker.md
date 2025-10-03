@@ -10,16 +10,19 @@ This document tracks the compatibility status of existing addons with the World 
 - **⚠️ Workaround** - Addon works with minor issues or requires specific workarounds
 - **🔄 Will be later** - Addon will work but requires updates from developer
 - **❌ Not working** - Addon is broken and may need significant changes or replacement
+- **🛑 Not Updating** - Addon will not be updated for Midnight (officially discontinued or unsupported)
 
 ---
 
+
 ## Testing Status Summary
 - [ ] **Total Addons:** 95
-- [ ] **Tested:** 0/95
+- [ ] **Tested:** 1/95
 - [ ] **Working:** 0
 - [ ] **With Workarounds:** 0
 - [ ] **Pending Updates:** 0
 - [ ] **Not Working:** 0
+- [ ] **Not Updating:** 1
 
 ---
 
@@ -123,10 +126,10 @@ This document tracks the compatibility status of existing addons with the World 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **WeakAuras** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+- [x] **WeakAuras** 🛑 - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Not updating for Midnight
+  - *Notes:* The WeakAuras team has announced they will not be updating for Midnight. See [source](https://www.patreon.com/posts/weakauras-x-140349416)
+  - *Last Tested:* 2025-10-03
 
 ### UI Enhancement Addons
 - [ ] **Cell** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working

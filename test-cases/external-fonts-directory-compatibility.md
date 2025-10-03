@@ -45,23 +45,25 @@ Scenario 1: [x] Pass
 - All UI and addon text should now use the new custom fonts provided in the external fonts directory.
 
 #### Actual Result
-- Font replacement works for the System Menu and Options screen (see screenshots below).
-- Unable to test in-game font replacement as the server is currently down. Will update this section once in-game testing is possible.
+- Font replacement works for the System Menu, Options screen, and in-game UI (see screenshots below).
+- In-game font replacement confirmed. All UI and addon text use the new custom fonts as expected.
 
 
 #### Status
-Scenario 2: [ ] Blocked (Cannot access game at the moment; in-game validation pending)
+Scenario 2: [x] Pass
 
 
 
 #### Notes
-- Things are looking good so far for system font replacement.
-- I will need to research if there are any new fonts included in the default font section that could be replaced.
+- System, menu, and in-game font replacement all work as expected with the new custom fonts.
+- No issues observed. All relevant UI elements use the custom fonts.
+
 
 ##### After Replacement Screenshots
 ![Custom Fonts - Login Screen](images/external-fonts-after.png)
 ![Custom Fonts - Game Menu](images/external-fonts-after-menu.png)
 ![Custom Fonts - System Menu](images/external-fonts-after-system.png)
+![Custom Fonts - In-Game](images/Screenshot%202025-10-03%20100709.png)
 
 ---
 
