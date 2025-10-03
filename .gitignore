@@ -1,0 +1,49 @@
+# General
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+.code-workspace
+
+# OS
+ehthumbs.db
+Icon?
+
+# Python
+__pycache__/
+*.pyc
+
+# Lua
+*.luac
+
+# Node
+node_modules/
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# System
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+.env
+secrets.*
+
+# Ignore test output
+/test-output/
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore backup files
+*~
