@@ -1,3 +1,10 @@
+## Guild Housing Finds
+
+### Guild Finder Behavior
+When searching for neighborhoods, your Guild appears at the top of the finder list, making it easy to locate and join your Guild's housing area.
+
+#### Example Screenshot
+![Guild Neighborhood Finder](images/GuildNeighborhood%202025-10-04%20121352.png)
 ### Large Gathering Spaces
 There are great large areas available in the housing system, suitable for hosting large gatherings, social events, or shows.
 Seating

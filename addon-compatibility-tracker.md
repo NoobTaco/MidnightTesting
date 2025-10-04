@@ -1,3 +1,8 @@
+### Rotation Helper Addons
+- [x] **Hekili** 🛑 - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Not updating for Midnight
+  - *Notes:* The Hekili developer has announced there will be no update for Midnight.
+  - *Last Tested:* 2025-10-03
 # WoW Midnight - Addon Compatibility Tracker
 
 ## Overview
