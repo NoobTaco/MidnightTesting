@@ -1,5 +1,10 @@
 ## Guild Housing Finds
 
+### Guild Housing Issues
+- Once the guild neighborhood is established, you need to log out and back in before you can move your house to that neighborhood.
+- Sometimes, when you exit your house, it appears to be missing. As a workaround, simply travel to the neighborhood through the menu and your house will reappear.
+## Guild Housing Finds
+
 ### Guild Finder Behavior
 When searching for neighborhoods, your Guild appears at the top of the finder list, making it easy to locate and join your Guild's housing area.
 
