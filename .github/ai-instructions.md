@@ -38,6 +38,10 @@ This file provides guidelines and context for AI tools and contributors working 
 - Include space for status, notes, and last tested date for each addon.
 - If the addon is high priority, add it to the High Priority Addons list as well.
 - Keep the alphabetical and category order for easy navigation.
+- When updating an addon's status, append the appropriate icon from the compatibility legend to the front of the addon name (e.g., ✅ **Addon Name** for working addons).
+- Mark the corresponding checkbox for the status and fill in the details under *Status:*, *Notes:*, *Tested Date:*, *Version Tested:*, and *Last Tested:*.
+- For addons that are not updating, use 🛑 and mark "Not Updating" if applicable.
+- After each update to an addon's status, recount and update the Testing Status Summary section with the current totals for tested addons, working, workarounds, pending updates, not working, and not updating.
 
 ---
 

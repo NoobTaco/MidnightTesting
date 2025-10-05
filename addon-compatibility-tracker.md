@@ -1,11 +1,5 @@
-### Rotation Helper Addons
-- [x] **Hekili** 🛑 - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
-  - *Status:* Not updating for Midnight
-  - *Notes:* The Hekili developer has announced there will be no update for Midnight.
-  - *Last Tested:* 2025-10-03
 # WoW Midnight - Addon Compatibility Tracker
 
-## Overview
 This document tracks the compatibility status of existing addons with the World of Warcraft expansion **Midnight**. Each addon is categorized by its working status to help prioritize testing and identify potential issues.
 
 ---
@@ -21,378 +15,591 @@ This document tracks the compatibility status of existing addons with the World 
 
 
 ## Testing Status Summary
-- [ ] **Total Addons:** 95
-- [ ] **Tested:** 1/95
-- [ ] **Working:** 0
-- [ ] **With Workarounds:** 0
-- [ ] **Pending Updates:** 0
-- [ ] **Not Working:** 0
-- [ ] **Not Updating:** 1
+- **Total Addons:** 95
+- **Tested:** 8/95
+- **Working:** 2
+- **With Workarounds:** 3
+- **Pending Updates:** 0
+- **Not Working:** 1
+- **Not Updating:** 2
 
 ---
 
 ## Addon Compatibility List
 
-### Core System Addons
+- [ ] **Addon Update Notifications**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Already Known?**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Auctionator**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
- - [x] **SharedMedia** - [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* All NTUI-media assets (fonts, audio, graphics) are correctly registered and accessible via LibSharedMedia. Integration tested and working as expected.
-  - *Notes:* NTUI-media integration with LibSharedMedia fully tested. No issues found. See test case: ntui-media-lsm-integration.md
+- ⚠️ **Baganator**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Working with some features missing.
+  - *Notes:* Some advanced features are not yet implemented for Midnight.
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 762
   - *Last Tested:* 2025-10-05
 
-- [x] **NoobTacoUI-Media** - [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* All fonts, audio, and graphics are correctly registered and accessible via LibSharedMedia. Full integration tested and working.
-  - *Notes:* See test case: ntui-media-lsm-integration.md. No issues found.
-  - *Last Tested:* 2025-10-05
-- [ ] **LoggerHead** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **BetterBlizzFrames**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-### Quest and Achievement Addons
-- [ ] **Kaliel's Tracker (The War Within) ... Quest / World Quest / Achievement** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **BigWigs Encounter Tools**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **HandyNotes** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **BigWigs_CommonAuras**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **HandyNotes: The War Within** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **BlizzHUDTweaks**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **HandyNotes: Dornogal** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **BlizzMove**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **HandyNotes: Dragonflight** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Boss Ability Announcement (BAA) for DBM or BigWigs**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **HandyNotes: MapNotes Retail only Instances and Delves locations** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Cell**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **HandyNotes Pandaria** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Cell - Unit Frames**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **World Quests List** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Chat Sound Customizer**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **Krowi's Achievement Filter** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Cursor Ring**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-### Combat and Encounter Addons
-- [ ] **Details! Damage Meter** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Details! Damage Meter**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **Details! Damage Meter Mythic+** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Details! Damage Meter Mythic+**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **BigWigs Encounter Tools** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **Edit Mode Expanded**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **LittleWigs** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **BigWigs_CommonAuras** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Boss Ability Announcement (BAA) for DBM or BigWigs** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [x] **WeakAuras** 🛑 - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+- 🛑 **Hekili**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
   - *Status:* Not updating for Midnight
-  - *Notes:* The WeakAuras team has announced they will not be updating for Midnight. See [source](https://www.patreon.com/posts/weakauras-x-140349416)
+  - *Notes:* The Hekili developer has announced there will be no update for Midnight.
+  - *Tested Date:* 
+  - *Version Tested:* 
   - *Last Tested:* 2025-10-03
 
-### UI Enhancement Addons
-- [ ] **Cell** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **HandyNotes**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **HandyNotes: Dornogal**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **HandyNotes: Dragonflight**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **HandyNotes: MapNotes Retail only Instances and Delves locations**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **HandyNotes Pandaria**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **HandyNotes: The War Within**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **idTip**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- ⚠️ **Kaliel's Tracker (The War Within) ... Quest / World Quest / Achievement**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Partially working with lots of Lua errors.
+  - *Notes:* Tested with version 7.14.0 on 2025-10-05. Will retest when developer has a chance to fix or API issues are resolved.
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 7.14.0
+  - *Last Tested:* 2025-10-05
+
+- [ ] **Krowi's Achievement Filter**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Leatrix Maps**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Leatrix Plus**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **LittleWigs**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **Cell - Unit Frames** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- ❌ **LoggerHead**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
+  - *Status:* Does not work. May be blocked by API changes in Midnight.
+  - *Notes:* Tested with version 11.2.0 on 2025-10-05. Some possible changes may come in a future update. Will retest if updated.
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0
+  - *Last Tested:* 2025-10-05
+
+- ✅ **NoobTacoUI-Media**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* All fonts, audio, and graphics are correctly registered and accessible via LibSharedMedia. Full integration tested and working.
+  - *Notes:* See test case: ntui-media-lsm-integration.md. No issues found.
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-05
+
+- [ ] **OmniCC**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **OPiee**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **oRA3**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **PeaversTalents**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **PeaversTalentsData**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Pet Battle Scripts**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Plater Nameplates**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Plumber**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Postal**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Premade Groups Filter**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Pretty Reputation**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Profession Shopping List**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Range Color Skills**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Rematch**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Rematch_TSMPetValues**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **RestedXP Guide**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **RGX | Simple Quest Plates!**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Routes**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **Plater Nameplates** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- ✅ **SharedMedia**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* All NTUI-media assets (fonts, audio, graphics) are correctly registered and accessible via LibSharedMedia. Integration tested and working as expected.
+  - *Notes:* NTUI-media integration with LibSharedMedia fully tested. No issues found. See test case: ntui-media-lsm-integration.md
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-05
+
+- [ ] **Shotta**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Silence Talking Heads**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **SilverDragon - Rare Scanner**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Simulationcraft**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Stat Priority**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **OmniCC** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- ⚠️ **Syndicator**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Working with some features missing.
+  - *Notes:* Some features are not yet implemented for Midnight.
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 241
+  - *Last Tested:* 2025-10-05
+
+- [ ] **Talent Tree Tweaks | TWW**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Teleport Menu**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **TipTac Reborn**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **TokenTransmogTooltips**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **TradeSkillMaster**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
+
+- [ ] **Waypoint UI**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **OPiee** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- 🛑 **WeakAuras**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Not updating for Midnight
+  - *Notes:* The WeakAuras team has announced they will not be updating for Midnight. See [source](https://www.patreon.com/posts/weakauras-x-140349416)
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-03
+
+- [ ] **WeeklyKnowledge**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **BetterBlizzFrames** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **WeeklyRewards - Multi-character Brewfest, K'aresh, Great Vault and Weekly Progress Tracking**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **BlizzHUDTweaks** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **WIM (WoW Instant Messenger) v3**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **Edit Mode Expanded** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **WoWVoxPacks (Neural2_C): BigWigs Countdown**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **BlizzMove** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **WoWVoxPacks (Neural2_C): BigWigs_Voice**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-### Map and Navigation Addons
-- [ ] **Leatrix Maps** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **WoWVoxPacks (Neural2_C): SharedMedia_Causese**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **Leatrix Plus** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **WoWthing Collector**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **Routes** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **World Quests List**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- [ ] **Waypoint UI** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+- [ ] **XIV_Databar Continued**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Teleport Menu** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-### Inventory and Bag Addons
-- [ ] **Baganator** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Syndicator** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-### Auction House and Economy
-- [ ] **Auctionator** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **TradeSkillMaster** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Profession Shopping List** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-### All Other Addons (Alphabetical)
-- [ ] **Addon Update Notifications** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-- [ ] **Already Known?** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Last Tested:*
-
-- [ ] **PeaversTalents** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **PeaversTalentsData** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Pet Battle Scripts** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Plumber** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Postal** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Premade Groups Filter** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Pretty Reputation** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **RGX | Simple Quest Plates!** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Range Color Skills** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Rematch** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Rematch_TSMPetValues** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **RestedXP Guide** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Shotta** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Silence Talking Heads** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **SilverDragon - Rare Scanner** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Simulationcraft** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Stat Priority** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **Talent Tree Tweaks | TWW** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **TipTac Reborn** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **TokenTransmogTooltips** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WIM (WoW Instant Messenger) v3** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WeeklyKnowledge** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WeeklyRewards - Multi-character Brewfest, K'aresh, Great Vault and Weekly Progress Tracking** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WoWVoxPacks (Neural2_C): BigWigs Countdown** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WoWVoxPacks (Neural2_C): BigWigs_Voice** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WoWVoxPacks (Neural2_C): SharedMedia_Causese** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **WoWthing Collector** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **XIV_Databar Continued** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **idTip** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
-- [ ] **oRA3** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
-
----
+  - *Notes:* 
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
 ## Critical Issues Found
 
@@ -414,22 +621,12 @@ This document tracks the compatibility status of existing addons with the World 
 
 ### High Priority Addons
 *(Addons that are essential for gameplay)*
-- [ ] **WeakAuras** - Critical for custom alerts and HUD elements
-- [ ] **Details! Damage Meter** - Essential for performance tracking
-- [ ] **BigWigs Encounter Tools** - Required for raid encounters
-- [ ] **SharedMedia** - Core dependency for many other addons
 
 ### Medium Priority Addons
 *(Important but not game-breaking)*
-- [ ] **TradeSkillMaster** - Auction house functionality
-- [ ] **HandyNotes** - Map annotations and guides
-- [ ] **Cell** - Unit frames and healing
 
 ### Low Priority Addons
 *(Quality of life improvements)*
-- [ ] **Pretty Reputation** - UI enhancement
-- [ ] **Chat Sound Customizer** - Audio customization
-- [ ] **Cursor Ring** - Visual enhancement
 
 ---
 
