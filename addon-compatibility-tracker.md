@@ -27,6 +27,124 @@ This document tracks the compatibility status of existing addons with the World 
 
 ## Addon Compatibility List
 
+### Working
+
+- ✅ **BlizzMove**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works so far
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.7.8
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Cursor Ring**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 1.06
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Farmer**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.27.2
+  - *Last Tested:* 2025-10-05
+
+- ✅ **idTip**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Seems to be working
+  - *Notes:* Will test again later
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.5.25
+  - *Last Tested:* 2025-10-05
+
+- ✅ **NoobTacoUI-Media**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* All fonts, audio, and graphics are correctly registered and accessible via LibSharedMedia. Full integration tested and working.
+  - *Notes:* See test case: ntui-media-lsm-integration.md. No issues found.
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Postal**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 4.31
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Premade Groups Filter**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Later testing needed to verify
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 6.9.5
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Range Color Skills**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 1.3
+  - *Last Tested:* 2025-10-05
+
+- ✅ **SharedMedia**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* All NTUI-media assets (fonts, audio, graphics) are correctly registered and accessible via LibSharedMedia. Integration tested and working as expected.
+  - *Notes:* NTUI-media integration with LibSharedMedia fully tested. No issues found. See test case: ntui-media-lsm-integration.md
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Shotta**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 2.6.0
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Silence Talking Heads**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Working in Midnight Alpha
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 21
+  - *Last Tested:* 2025-10-05
+
+- ✅ **Simulationcraft**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Working in Midnight
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 12.0.0-01
+  - *Last Tested:* 2025-10-05
+
+- ✅ **WoWVoxPacks (Neural2_C): BigWigs Countdown**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Work with BigWigs
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0
+  - *Last Tested:* 2025-10-05
+
+- ✅ **WoWVoxPacks (Neural2_C): BigWigs_Voice**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Work with BigWigs
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0
+  - *Last Tested:* 2025-10-05
+
+### Needs Work from Devs
+
+#### Work with Workaround
+
 - ⚠️ **Already Known?**
   [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* Works with errors
@@ -51,14 +169,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 762
   - *Last Tested:* 2025-10-05
 
-- ❌ **BetterBlizzFrames**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
-  - *Status:* Not working at the moment
-  - *Notes:* Will revisit
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 1.7.5
-  - *Last Tested:* 2025-10-05
-
 - ⚠️ **BigWigs Encounter Tools**
   [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* Partially works
@@ -67,20 +177,160 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 399.9
   - *Last Tested:* 2025-10-05
 
+- ⚠️ **Collectinator**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works with errors
+  - *Notes:* Needs more testing later
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 78
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **Kaliel's Tracker (The War Within) ... Quest / World Quest / Achievement**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Partially working with lots of Lua errors.
+  - *Notes:* Tested with version 7.14.0 on 2025-10-05. Will retest when developer has a chance to fix or API issues are resolved.
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 7.14.0
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **Krowi's Achievement Filter**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Almost working but still not playable
+  - *Notes:* Will recheck later
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 86.2
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **Leatrix Maps**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works but has some bugs
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.10
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **Leatrix Plus**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works with a few errors
+  - *Notes:* Will retest
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.10
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **OPiee**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works but has errors that make it non-functional till fixed by the dev
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 7.3a
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **Plumber**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Partially working
+  - *Notes:* Still needs some fixes however
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 1.7.5
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **SilverDragon - Rare Scanner**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works with errors
+  - *Notes:* Will retest
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 2025.14
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **Syndicator**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Working with some features missing.
+  - *Notes:* Some features are not yet implemented for Midnight.
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 241
+  - *Last Tested:* 2025-10-05
+
+- ⚠️ **XIV_Databar Continued**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works with missing features
+  - *Notes:* Will retest once dev has updated
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.7.4
+  - *Last Tested:* 2025-10-05
+
+#### Pending Updates
+
+- 🔄 **LittleWigs**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not updated yet
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.36
+  - *Last Tested:* 2025-10-05
+
+- 🔄 **Pretty Reputation**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Needs work before Midnight
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 1.4.5b
+  - *Last Tested:* 2025-10-05
+
+- � **Profession Shopping List**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not working, needs dev to update
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0-005
+  - *Last Tested:* 2025-10-05
+
+- 🔄 **Stat Priority**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not updated yet for Midnight
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.2.2
+  - *Last Tested:* 2025-10-05
+
+- 🔄 **Teleport Menu**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Does not work with Midnight yet
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2
+  - *Last Tested:* 2025-10-05
+
+- 🔄 **TipTac Reborn**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not working yet in Midnight, more work is needed
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 25.10.03
+  - *Last Tested:* 2025-10-05
+
+- 🔄 **Waypoint UI**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not fully working yet
+  - *Notes:* Should be updated as the developer gets alpha access
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 0.0.7b
+  - *Last Tested:* 2025-10-05
+
+### Not Working
+
+- ❌ **BetterBlizzFrames**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
+  - *Status:* Not working at the moment
+  - *Notes:* Will revisit
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 1.7.5
+  - *Last Tested:* 2025-10-05
+
 - ❌ **BlizzHUDTweaks**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
   - *Status:* Not working
   - *Notes:* 
   - *Tested Date:* 2025-10-05
   - *Version Tested:* 1.56.0
-  - *Last Tested:* 2025-10-05
-
-- ✅ **BlizzMove**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works so far
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 3.7.8
   - *Last Tested:* 2025-10-05
 
 - ❌ **Boss Ability Announcement (BAA) for DBM or BigWigs**
@@ -107,44 +357,12 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 1.4.70
   - *Last Tested:* 2025-10-05
 
-- ⚠️ **Collectinator**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works with errors
-  - *Notes:* Needs more testing later
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 78
-  - *Last Tested:* 2025-10-05
-
 - ❌ **Chat Sound Customizer**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
   - *Status:* Does not work
   - *Notes:* 
   - *Tested Date:* 2025-10-05
   - *Version Tested:* 2.5.1
-  - *Last Tested:* 2025-10-05
-
-- ✅ **Cursor Ring**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 1.06
-  - *Last Tested:* 2025-10-05
-
-- 🛑 **Details! Damage Meter**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
-  - *Status:* Will not be updated for midnight
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 
-  - *Last Tested:* 2025-10-05
-
-- 🛑 **Details! Damage Meter Mythic+**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
-  - *Status:* Will not be updated for midnight
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 
   - *Last Tested:* 2025-10-05
 
 - ❌ **Edit Mode Expanded**
@@ -155,76 +373,12 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 11.2-009
   - *Last Tested:* 2025-10-05
 
-- 🛑 **Hekili**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
-  - *Status:* Not updating for Midnight
-  - *Notes:* The Hekili developer has announced there will be no update for Midnight.
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 2025-10-03
-
-- [ ] **HandyNotes**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- ✅ **idTip**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Seems to be working
-  - *Notes:* Will test again later
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.5.25
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **Kaliel's Tracker (The War Within) ... Quest / World Quest / Achievement**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Partially working with lots of Lua errors.
-  - *Notes:* Tested with version 7.14.0 on 2025-10-05. Will retest when developer has a chance to fix or API issues are resolved.
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 7.14.0
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **Krowi's Achievement Filter**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Almost working but still not playable
-  - *Notes:* Will recheck later
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 86.2
-  - *Last Tested:* 2025-10-05
-
 - ❌ **Krowi's Extended Vendor**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
   - *Status:* Broken
   - *Notes:* 
   - *Tested Date:* 2025-10-05
   - *Version Tested:* 14.2
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **Leatrix Maps**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works but has some bugs
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.10
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **Leatrix Plus**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works with a few errors
-  - *Notes:* Will retest
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.10
-  - *Last Tested:* 2025-10-05
-
-- 🔄 **LittleWigs**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Not updated yet
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.36
   - *Last Tested:* 2025-10-05
 
 - ❌ **LoggerHead**
@@ -235,14 +389,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 11.2.0
   - *Last Tested:* 2025-10-05
 
-- ✅ **NoobTacoUI-Media**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* All fonts, audio, and graphics are correctly registered and accessible via LibSharedMedia. Full integration tested and working.
-  - *Notes:* See test case: ntui-media-lsm-integration.md. No issues found.
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 2025-10-05
-
 - ❌ **OmniCC**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
   - *Status:* Broken
@@ -251,21 +397,47 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 11.2.7
   - *Last Tested:* 2025-10-05
 
-- ⚠️ **OPiee**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works but has errors that make it non-functional till fixed by the dev
-  - *Notes:* 
+- ❌ **WIM (WoW Instant Messenger) v3**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
+  - *Status:* Not working in Midnight Alpha
+  - *Notes:* No word if it will be fixed yet
   - *Tested Date:* 2025-10-05
-  - *Version Tested:* 7.3a
+  - *Version Tested:* 3.12.14
   - *Last Tested:* 2025-10-05
 
-- [ ] **Pet Battle Scripts**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- ❌ **World Quests List**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
+  - *Status:* Does not work with Midnight Alpha
   - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 117
+  - *Last Tested:* 2025-10-05
+
+### Not Updating
+
+- 🛑 **Details! Damage Meter**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Will not be updated for midnight
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-05
+
+- � **Details! Damage Meter Mythic+**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Will not be updated for midnight
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-05
+
+- 🛑 **Hekili**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Not updating for Midnight
+  - *Notes:* The Hekili developer has announced there will be no update for Midnight.
   - *Tested Date:* 
   - *Version Tested:* 
-  - *Last Tested:* 
+  - *Last Tested:* 2025-10-03
 
 - 🛑 **Plater Nameplates**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
@@ -275,53 +447,31 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 2025-10-05
 
-- ⚠️ **Plumber**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Partially working
-  - *Notes:* Still needs some fixes however
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 1.7.5
-  - *Last Tested:* 2025-10-05
+- 🛑 **WeakAuras**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Not updating for Midnight
+  - *Notes:* The WeakAuras team has announced they will not be updating for Midnight. See [source](https://www.patreon.com/posts/weakauras-x-140349416)
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-03
 
-- ✅ **Postal**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
+### Untested
+
+- [ ] **HandyNotes**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
   - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 4.31
-  - *Last Tested:* 2025-10-05
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
-- ✅ **Premade Groups Filter**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* Later testing needed to verify
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 6.9.5
-  - *Last Tested:* 2025-10-05
-
-- 🔄 **Pretty Reputation**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Needs work before Midnight
+- [ ] **Pet Battle Scripts**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* 
   - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 1.4.5b
-  - *Last Tested:* 2025-10-05
-
-- 🔄 **Profession Shopping List**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Not working, needs dev to update
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.0-005
-  - *Last Tested:* 2025-10-05
-
-- ✅ **Range Color Skills**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 1.3
-  - *Last Tested:* 2025-10-05
+  - *Tested Date:* 
+  - *Version Tested:* 
+  - *Last Tested:* 
 
 - [ ] **RestedXP Guide**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -331,78 +481,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
-- ✅ **SharedMedia**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* All NTUI-media assets (fonts, audio, graphics) are correctly registered and accessible via LibSharedMedia. Integration tested and working as expected.
-  - *Notes:* NTUI-media integration with LibSharedMedia fully tested. No issues found. See test case: ntui-media-lsm-integration.md
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 2025-10-05
-
-- ✅ **Shotta**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 2.6.0
-  - *Last Tested:* 2025-10-05
-
-- ✅ **Silence Talking Heads**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* Working in Midnight Alpha
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 21
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **SilverDragon - Rare Scanner**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works with errors
-  - *Notes:* Will retest
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 2025.14
-  - *Last Tested:* 2025-10-05
-
-- ✅ **Simulationcraft**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* Working in Midnight
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 12.0.0-01
-  - *Last Tested:* 2025-10-05
-
-- 🔄 **Stat Priority**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Not updated yet for Midnight
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 3.2.2
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **Syndicator**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Working with some features missing.
-  - *Notes:* Some features are not yet implemented for Midnight.
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 241
-  - *Last Tested:* 2025-10-05
-
-- 🔄 **Teleport Menu**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Does not work with Midnight yet
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2
-  - *Last Tested:* 2025-10-05
-
-- 🔄 **TipTac Reborn**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Not working yet in Midnight, more work is needed
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 25.10.03
-  - *Last Tested:* 2025-10-05
-
 - [ ] **TradeSkillMaster**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
@@ -410,22 +488,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Tested Date:* 
   - *Version Tested:* 
   - *Last Tested:* 
-
-- 🔄 **Waypoint UI**
-  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
-  - *Status:* Not fully working yet
-  - *Notes:* Should be updated as the developer gets alpha access
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 0.0.7b
-  - *Last Tested:* 2025-10-05
-
-- 🛑 **WeakAuras**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
-  - *Status:* Not updating for Midnight
-  - *Notes:* The WeakAuras team has announced they will not be updating for Midnight. See [source](https://www.patreon.com/posts/weakauras-x-140349416)
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 2025-10-03
 
 - [ ] **WeeklyKnowledge**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -443,30 +505,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
-- ❌ **WIM (WoW Instant Messenger) v3**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
-  - *Status:* Not working in Midnight Alpha
-  - *Notes:* No word if it will be fixed yet
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 3.12.14
-  - *Last Tested:* 2025-10-05
-
-- ✅ **WoWVoxPacks (Neural2_C): BigWigs Countdown**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* Work with BigWigs
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.0
-  - *Last Tested:* 2025-10-05
-
-- ✅ **WoWVoxPacks (Neural2_C): BigWigs_Voice**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* Work with BigWigs
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.0
-  - *Last Tested:* 2025-10-05
-
 - [ ] **WoWVoxPacks (Neural2_C): SharedMedia_Causese**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
@@ -474,30 +512,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Tested Date:* 
   - *Version Tested:* 
   - *Last Tested:* 
-
-- ❌ **World Quests List**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
-  - *Status:* Does not work with Midnight Alpha
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 117
-  - *Last Tested:* 2025-10-05
-
-- ⚠️ **XIV_Databar Continued**
-  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works with missing features
-  - *Notes:* Will retest once dev has updated
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 3.7.4
-  - *Last Tested:* 2025-10-05
-
-- ✅ **Farmer**
-  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* Works
-  - *Notes:* 
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 3.27.2
-  - *Last Tested:* 2025-10-05
 
 ## Critical Issues Found
 
