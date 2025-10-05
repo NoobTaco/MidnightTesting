@@ -10,7 +10,7 @@ When searching for neighborhoods, your Guild appears at the top of the finder li
 
 ### Guild Management and Permissions
 * Your other toons can visit your guild house without being in the guild. (As of now)
-* There are no settings or permissions for GM or Officers to limit plots. It will be a free-for-all. We will need to instill our guild to be respectful and civil in the land rush.
+* There are no settings or permissions for GM or Officers to limit plots. It will be a free-for-all.
 * Endeavors and any controls to that are not enabled for testing yet.
 
 #### Example Screenshot
