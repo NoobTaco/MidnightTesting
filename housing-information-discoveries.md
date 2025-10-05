@@ -2,18 +2,23 @@
 
 ### Guild Housing Issues
 - Once the guild neighborhood is established, you need to log out and back in before you can move your house to that neighborhood.
-- Sometimes, when you exit your house, it appears to be missing. As a workaround, simply travel to the neighborhood through the menu and your house will reappear.
+- Sometimes, when you exit your house, it appears to be missing. As a workaround, simply travel to the neighborhood through the menu and your house will reappear. (Will test some more but seems to be resolved)
 ## Guild Housing Finds
 
 ### Guild Finder Behavior
 When searching for neighborhoods, your Guild appears at the top of the finder list, making it easy to locate and join your Guild's housing area.
+
+### Guild Management and Permissions
+* Your other toons can visit your guild house without being in the guild. (As of now)
+* There are no settings or permissions for GM or Officers to limit plots. It will be a free-for-all. We will need to instill our guild to be respectful and civil in the land rush.
+* Endeavors and any controls to that are not enabled for testing yet.
 
 #### Example Screenshot
 ![Guild Neighborhood Finder](images/GuildNeighborhood%202025-10-04%20121352.png)
 ### Large Gathering Spaces
 There are great large areas available in the housing system, suitable for hosting large gatherings, social events, or shows.
 Seating
-* 98 seats for the audiance.
+* 98 seats for the audience.
 * 15 seats in the band pit
 The stage is large and the curtains move.
 
