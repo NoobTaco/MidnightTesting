@@ -34,21 +34,23 @@ This document tracks the compatibility status of existing addons with the World 
 ## Addon Compatibility List
 
 ### Core System Addons
-- [ ] **BugGrabber** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **BugSack** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
   - *Last Tested:*
 
-- [ ] **SharedMedia** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+ - [x] **SharedMedia** - [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* All NTUI-media assets (fonts, audio, graphics) are correctly registered and accessible via LibSharedMedia. Integration tested and working as expected.
+  - *Notes:* NTUI-media integration with LibSharedMedia fully tested. No issues found. See test case: ntui-media-lsm-integration.md
+  - *Last Tested:* 2025-10-05
 
+- [x] **NoobTacoUI-Media** - [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* All fonts, audio, and graphics are correctly registered and accessible via LibSharedMedia. Full integration tested and working.
+  - *Notes:* See test case: ntui-media-lsm-integration.md. No issues found.
+  - *Last Tested:* 2025-10-05
 - [ ] **LoggerHead** - [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
   - *Notes:*
