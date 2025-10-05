@@ -15,25 +15,17 @@ This document tracks the compatibility status of existing addons with the World 
 
 
 ## Testing Status Summary
-- **Total Addons:** 97
-- **Tested:** 34/97
-- **Working:** 8
-- **With Workarounds:** 12
-- **Pending Updates:** 0
-- **Not Working:** 10
+- **Total Addons:** 59
+- **Tested:** 52/59
+- **Working:** 14
+- **With Workarounds:** 14
+- **Pending Updates:** 7
+- **Not Working:** 12
 - **Not Updating:** 5
 
 ---
 
 ## Addon Compatibility List
-
-- [ ] **Addon Update Notifications**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
 
 - ⚠️ **Already Known?**
   [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
@@ -74,14 +66,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Tested Date:* 2025-10-05
   - *Version Tested:* 399.9
   - *Last Tested:* 2025-10-05
-
-- [ ] **BigWigs_CommonAuras**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
 
 - ❌ **BlizzHUDTweaks**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
@@ -187,46 +171,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
-- [ ] **HandyNotes: Dornogal**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **HandyNotes: Dragonflight**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **HandyNotes: MapNotes Retail only Instances and Delves locations**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **HandyNotes Pandaria**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **HandyNotes: The War Within**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
 - ✅ **idTip**
   [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* Seems to be working
@@ -275,11 +219,13 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 11.2.10
   - *Last Tested:* 2025-10-05
 
-- [ ] **LittleWigs**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+- 🔄 **LittleWigs**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not updated yet
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.36
+  - *Last Tested:* 2025-10-05
 
 - ❌ **LoggerHead**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
@@ -313,30 +259,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 7.3a
   - *Last Tested:* 2025-10-05
 
-- [ ] **oRA3**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **PeaversTalents**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **PeaversTalentsData**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
 - [ ] **Pet Battle Scripts**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
@@ -369,29 +291,29 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 4.31
   - *Last Tested:* 2025-10-05
 
-- [ ] **Premade Groups Filter**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ✅ **Premade Groups Filter**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Later testing needed to verify
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 6.9.5
+  - *Last Tested:* 2025-10-05
 
-- [ ] **Pretty Reputation**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- 🔄 **Pretty Reputation**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Needs work before Midnight
   - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 1.4.5b
+  - *Last Tested:* 2025-10-05
 
-- [ ] **Profession Shopping List**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- 🔄 **Profession Shopping List**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not working, needs dev to update
   - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0-005
+  - *Last Tested:* 2025-10-05
 
 - ✅ **Range Color Skills**
   [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -401,22 +323,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 1.3
   - *Last Tested:* 2025-10-05
 
-- [ ] **Rematch**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **Rematch_TSMPetValues**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
 - [ ] **RestedXP Guide**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
   - *Status:* 
@@ -424,20 +330,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Tested Date:* 
   - *Version Tested:* 
   - *Last Tested:* 
-
-- [ ] **RGX | Simple Quest Plates!**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **Routes**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
 
 - ✅ **SharedMedia**
   [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -447,21 +339,21 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 2025-10-05
 
-- [ ] **Shotta**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- ✅ **Shotta**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
   - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 2.6.0
+  - *Last Tested:* 2025-10-05
 
-- [ ] **Silence Talking Heads**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ✅ **Silence Talking Heads**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Working in Midnight Alpha
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 21
+  - *Last Tested:* 2025-10-05
 
 - ⚠️ **SilverDragon - Rare Scanner**
   [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
@@ -471,19 +363,21 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 2025.14
   - *Last Tested:* 2025-10-05
 
-- [ ] **Simulationcraft**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ✅ **Simulationcraft**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Working in Midnight
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 12.0.0-01
+  - *Last Tested:* 2025-10-05
 
-- [ ] **Stat Priority**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+- 🔄 **Stat Priority**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not updated yet for Midnight
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.2.2
+  - *Last Tested:* 2025-10-05
 
 - ⚠️ **Syndicator**
   [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
@@ -493,37 +387,21 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 241
   - *Last Tested:* 2025-10-05
 
-- [ ] **Talent Tree Tweaks | TWW**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- 🔄 **Teleport Menu**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Does not work with Midnight yet
   - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2
+  - *Last Tested:* 2025-10-05
 
-- [ ] **Teleport Menu**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- 🔄 **TipTac Reborn**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not working yet in Midnight, more work is needed
   - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **TipTac Reborn**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **TokenTransmogTooltips**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 25.10.03
+  - *Last Tested:* 2025-10-05
 
 - [ ] **TradeSkillMaster**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -533,11 +411,13 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
-- [ ] **Waypoint UI**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:*
-  - *Last Tested:*
+- 🔄 **Waypoint UI**
+  [ ] Works / [ ] Workaround / [x] Will be later / [ ] Not working
+  - *Status:* Not fully working yet
+  - *Notes:* Should be updated as the developer gets alpha access
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 0.0.7b
+  - *Last Tested:* 2025-10-05
 
 - 🛑 **WeakAuras**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
@@ -563,29 +443,29 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
-- [ ] **WIM (WoW Instant Messenger) v3**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ❌ **WIM (WoW Instant Messenger) v3**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
+  - *Status:* Not working in Midnight Alpha
+  - *Notes:* No word if it will be fixed yet
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.12.14
+  - *Last Tested:* 2025-10-05
 
-- [ ] **WoWVoxPacks (Neural2_C): BigWigs Countdown**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ✅ **WoWVoxPacks (Neural2_C): BigWigs Countdown**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Work with BigWigs
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0
+  - *Last Tested:* 2025-10-05
 
-- [ ] **WoWVoxPacks (Neural2_C): BigWigs_Voice**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ✅ **WoWVoxPacks (Neural2_C): BigWigs_Voice**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* Work with BigWigs
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 11.2.0
+  - *Last Tested:* 2025-10-05
 
 - [ ] **WoWVoxPacks (Neural2_C): SharedMedia_Causese**
   [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -595,29 +475,21 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
-- [ ] **WoWthing Collector**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
+- ❌ **World Quests List**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
+  - *Status:* Does not work with Midnight Alpha
   - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 117
+  - *Last Tested:* 2025-10-05
 
-- [ ] **World Quests List**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
-
-- [ ] **XIV_Databar Continued**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
-  - *Status:* 
-  - *Notes:* 
-  - *Tested Date:* 
-  - *Version Tested:* 
-  - *Last Tested:* 
+- ⚠️ **XIV_Databar Continued**
+  [ ] Works / [x] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works with missing features
+  - *Notes:* Will retest once dev has updated
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.7.4
+  - *Last Tested:* 2025-10-05
 
 - ✅ **Farmer**
   [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
@@ -665,5 +537,5 @@ This document tracks the compatibility status of existing addons with the World 
 ---
 
 *Last Updated: October 5, 2025*  
-*Total Addons: 97*  
+*Total Addons: 59*  
 *Document Version: 1.0*
