@@ -16,8 +16,8 @@ This document tracks the compatibility status of existing addons with the World 
 
 ## Testing Status Summary
 - **Total Addons:** 97
-- **Tested:** 33/97
-- **Working:** 7
+- **Tested:** 34/97
+- **Working:** 8
 - **With Workarounds:** 12
 - **Pending Updates:** 0
 - **Not Working:** 10
@@ -619,6 +619,14 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 
   - *Last Tested:* 
 
+- ✅ **Farmer**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works
+  - *Notes:* 
+  - *Tested Date:* 2025-10-05
+  - *Version Tested:* 3.27.2
+  - *Last Tested:* 2025-10-05
+
 ## Critical Issues Found
 
 | Addon Name | Issue Description | Severity | Workaround | Date Reported |
@@ -656,6 +664,6 @@ This document tracks the compatibility status of existing addons with the World 
 
 ---
 
-*Last Updated: October 3, 2025*  
-*Total Addons: 95*  
+*Last Updated: October 5, 2025*  
+*Total Addons: 97*  
 *Document Version: 1.0*
