@@ -1,5 +1,14 @@
 ## Guild Housing Finds
 
+### Plot Layout
+**Note:** Each neighborhood has 55 spaces for houses.
+
+#### Alliance Neighborhood Plot Layout
+![Alliance NH Plots](images/alliance-NH-plots.png)
+
+#### Horde Neighborhood Plot Layout
+![Horde NH Plots](images/horde-NH-plots.png)
+
 ### Guild Housing Issues
 - Once the guild neighborhood is established, you need to log out and back in before you can move your house to that neighborhood.
 - Sometimes, when you exit your house, it appears to be missing. As a workaround, simply travel to the neighborhood through the menu and your house will reappear. (Will test some more but seems to be resolved)
@@ -18,8 +27,7 @@ The NPC Lyssabel Dawnpetal, followed by the Neighborhood Steward, sells a renami
 
 ![Neighborhood Renaming Scroll](images/Housing-nh-rename.png)
 
-#### Example Screenshot
-![Guild Neighborhood Finder](images/GuildNeighborhood%202025-10-04%20121352.png)
+
 ### Large Gathering Spaces
 There are great large areas available in the housing system, suitable for hosting large gatherings, social events, or shows.
 Seating
@@ -30,10 +38,6 @@ The stage is large and the curtains move.
 
 #### Example Screenshots
 ![Large Gathering Area 1](images/Screenshot%202025-10-03%20132647.png)
-
-### Plot Layout
-![Full map of zone](images/Screenshot%202025-10-03%20132654.png)
-![Better view of plots](images/plots-2025-10-03.png)
 
 # Housing Information Discoveries
 
@@ -93,5 +97,3 @@ To gather lumber, you will need an axe. The axe is shown in the following screen
 
 ![Lumberjack Axe](images/lumberjack-quest2.png)
 ![Lumberjack Axe with Quest Text](images/lumberjack-quest3.png)
-
-
