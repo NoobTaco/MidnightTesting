@@ -101,12 +101,14 @@ This can result in some layers being sparsely populated, which may impact commun
 4. Communicate regularly with members about available plots and the benefits of consolidating into active layers.
 5. Use in-game events and social gatherings to encourage movement into the main or most active layers.
 
+
 ### 7.2 Additional Recommendations
 - Assign officers to manage permissions and coordinate neighborhood moves.
 - Use the renaming feature to clearly identify the main guild neighborhood.
 - Host events in large gathering spaces to foster community.
 - Encourage members to learn the Lumberjack skill for resource self-sufficiency.
 - Monitor for updates on guild management features as they are released.
+- Create dedicated Discord channels to help members with neighborhood and house issues during the release period. This will streamline support and ensure questions are answered quickly.
 
 ---
 
