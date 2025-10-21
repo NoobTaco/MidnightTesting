@@ -1,4 +1,4 @@
-# Guild Housing Leadership Report
+# WIP - Guild Housing Leadership Report 
 
 ## Purpose
 This report is designed to inform guild leadership about the new Housing system in World of Warcraft: Midnight. It summarizes key discoveries, features, and recommendations to help manage and optimize housing for a large guild (500+ members) upon public release.
