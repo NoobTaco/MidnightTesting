@@ -16,9 +16,14 @@ This report is designed to inform guild leadership about the new Housing system 
 
 ---
 
+
 ## 2. Guild Housing Mechanics
 - After establishing a guild neighborhood, members must log out and back in before moving their house to the new neighborhood.
 - When searching for neighborhoods, your guild appears at the top of the finder list, making it easy for members to locate and join.
+
+**Important Access Information:**
+- Members will NOT be able to move into a house unless they have pre-purchased the Midnight expansion.
+- Housing is scheduled to be enabled during the prepatch (version 11.2.7), which is estimated to release on December 2.
 
 ---
 
