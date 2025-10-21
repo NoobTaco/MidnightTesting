@@ -75,8 +75,12 @@ All characters in a player's warband can visit the guild house, even if they are
 ---
 
 ## 7. Recommendations for Large Guilds
+
 ### 7.1 Neighborhood Layers & Lot Allotment
 The guild system only allows for one main guild neighborhood (NH). If the number of guild members seeking housing exceeds the 55-plot limit, the system automatically creates additional layers or sub-neighborhoods as overflow. Multiple main NHs are not possible, but this overflow system ensures all members can participate.
+
+**Note on Layer Creation Threshold:**
+It is currently unknown exactly how many lots must be occupied before a new layer is spun up. Some developer statements have mentioned an 80% occupancy threshold, but this has not been verified and may change before release. Guild leadership should be prepared for possible adjustments to this threshold and monitor official updates for confirmation.
 
 **Key Considerations:**
 - Only one main guild NH exists; overflow is handled by layers.
@@ -101,10 +105,16 @@ This can result in some layers being sparsely populated, which may impact commun
 
 ---
 
+
 ## 8. Open Questions & To-Do
 - Awaiting release of full guild management page for housing.
 - Need further testing on permission settings for friends, guild members, and public.
 - Monitor for additional decor, crafting, and event features in future updates.
+
+### Officer Discussion Points
+- Is there a need to increase the guild roster size to accommodate more members?
+- What are effective strategies for managing short-term members who join and quickly leave?
+- Should the guild establish a specific period of inactivity after which members are removed from the guild and the guild housing area? If so, what should that timeframe be?
 
 ---
 
