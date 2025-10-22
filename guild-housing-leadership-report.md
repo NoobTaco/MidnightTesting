@@ -147,7 +147,7 @@ To ensure a vibrant and active community, especially within the new Guild Neighb
 
 This policy will take effect with the launch of the *Midnight* expansion.
 
-* **Rule:** Members who occupy a guild housing plot and have not logged in for **two (2) months** will be removed from the guild roster.
+* **Rule:** Members who occupy a guild housing plot and have not logged in for **two (2) months** will be removed from the guild roster. (or plot if tools are provided *update this once we know more!)
 * **Reason:** This policy is necessary to free up housing plots for other active members, ensuring our Guild Neighborhood remains a lively and engaging community hub.
 * **Your Property is Safe:** Your house, items, and progress are **not lost**. The game automatically places your home and its contents into a secure housing storage.
 * **How to Return:** You are always welcome back. Upon your return to the game, simply request a guild invite. Once you rejoin, you can go to the Guild Neighborhood, select any available plot, and replace your house from storage.
