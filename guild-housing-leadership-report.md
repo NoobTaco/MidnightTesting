@@ -142,12 +142,19 @@ This can result in some layers being sparsely populated, which may impact commun
 
 ## Call to Action: Guild Member Participation
 
+
 9. **Guild participation in the next PTR:**
-   - If there is another open PTR event, we encourage as many members as possible to log into the PTR and be invited into the guild. This will allow us to test the layering effect and give everyone a chance to view available plots and make a house.
+  - If there is another open PTR event, we encourage as many members as possible to log into the PTR and be invited into the guild. This will allow us to test the layering effect and give everyone a chance to view available plots and make a house.
 
 10. **Guild participation in open Beta:**
-    - To participate in the open Beta, you must have pre-purchased the Midnight expansion.
-    - When the open Beta begins, we will need 5 people to help create the guild and 5 more (for a total of 10) to establish the guild housing. Afterward, all interested members will be invited into the Beta guild for further housing system testing.
+   - To participate in the open Beta, you must have pre-purchased the Midnight expansion.
+   - When the open Beta begins, we will need 5 people to help create the guild and 5 more (for a total of 10) to establish the guild housing. Afterward, all interested members will be invited into the Beta guild for further housing system testing.
+
+---
+
+**Note on Beta Release Date:**
+
+The beta release date for World of Warcraft: Midnight is not yet confirmed, but it is expected to begin sometime after the alpha testing period, potentially starting the week of November 17, 2025. Beta access is a perk of pre-purchasing the expansion.
 
 ---
 
