@@ -4,8 +4,6 @@
 
 This report is designed to inform guild leadership about the new Housing system in World of Warcraft: Midnight. It summarizes key discoveries, features, and recommendations to help manage and optimize housing for a large guild (500+ members) upon public release.
 
----
-
 ## 1. Neighborhood and Plot Layout
 
 - Each neighborhood contains 55 house plots.
@@ -89,6 +87,12 @@ All characters in a player's warband can visit the guild house, even if they are
 - Axe: ![Lumberjack Axe](images/lumberjack-quest2.png) ![Lumberjack Axe with Quest Text](images/lumberjack-quest3.png)
 
 ---
+
+## Endeavors
+
+Endeavors — These will not be a requirement to be part of the guild housing. We do not require participation in raiding, mythics, normal runs, delves, or any other specific in-game activity. Completing Endeavors will be entirely up to each guild member.
+
+That said, since we haven’t seen what Endeavors will be like yet, I’m hopeful that all guild housing members will want to take part in them once they’re available!
 
 ## 7. Recommendations for Large Guilds
 
