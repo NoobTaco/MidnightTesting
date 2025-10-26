@@ -32,6 +32,8 @@ This report is designed to inform guild leadership about the new Housing system 
 ## 3. Permissions & Access Control
 
 Permission settings exist in guild ranks, but the full management page is not yet released.
+
+### Per House permissions
 Current permission options (subject to change):
     - **Owner:** Full control
     - **Friends:** Visit/interact, cannot change settings

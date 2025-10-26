@@ -29,14 +29,15 @@ Important notes:
 
 ## 4. Permissions & Access Control
 
-Permission settings are managed via guild ranks. The full housing management page is not yet released; current options (subject to change) include:
+Permission settings exist in guild ranks, but the full management page is not yet released.
 
-- Owner: Full control
-- Friends: Visit/interact (cannot change settings)
-- Guild Members: Visit/interact (cannot change settings unless explicitly allowed)
-- Public: Visit only (no changes)
-
-These controls support both private and social playstyles.
+### Per House permissions
+Current permission options (subject to change):
+    - **Owner:** Full control
+    - **Friends:** Visit/interact, cannot change settings
+    - **Guild Members:** Visit/interact, cannot change settings unless explicitly allowed
+    - **Public:** Visit only, no changes
+Flexible access supports both private and social playstyles.
 
 Visual reference: ![House Settings and Permissions](images/house_settings_and_permissions.png)
 
@@ -48,10 +49,6 @@ All characters in a player's warband can visit that player's guild house, even i
 
 - Houses support customization of floors, walls, and roofs.
 - Decor items can be crafted or purchased from vendors (vendors currently show up to three pages of items).
-- Large gathering spaces are available with:
-  - 98 audience seats
-  - 15 band pit seats
-  - Large stage with moving curtains
 
 ## 6. Gathering & Crafting
 
