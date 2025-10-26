@@ -14,18 +14,25 @@ This document tracks the compatibility status of existing addons with the World 
 ---
 
 
+
+
+
+
 ## Testing Status Summary
 - **Total Addons:** 59
 - **Tested:** 52/59
-- **Working:** 14
+- **Working:** 19
 - **With Workarounds:** 14
-- **Pending Updates:** 7
-- **Not Working:** 12
-- **Not Updating:** 5
+- **Pending Updates:** 6
+- **Not Working:** 11
+- **Not Updating:** 6
 
 ---
 
 ## Addon Compatibility List
+
+
+
 
 ### Working
 
@@ -140,6 +147,43 @@ This document tracks the compatibility status of existing addons with the World 
   - *Tested Date:* 2025-10-05
   - *Version Tested:* 11.2.0
   - *Last Tested:* 2025-10-05
+
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works in Midnight Alpha
+  - *Notes:* Verified working on version 1.0.3
+  - *Tested Date:* 2025-10-26
+  - *Version Tested:* 1.0.3
+  - *Last Tested:* 2025-10-26
+
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works in Midnight Alpha
+  - *Notes:* Verified working on version 91
+  - *Tested Date:* 2025-10-26
+  - *Version Tested:* 91
+  - *Last Tested:* 2025-10-26
+
+- ✅ **Masque**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works in Midnight Alpha
+  - *Notes:* Verified working on version 11.2.5
+  - *Tested Date:* 2025-10-26
+  - *Version Tested:* 11.2.5
+  - *Last Tested:* 2025-10-26
+
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works in Midnight Alpha
+  - *Notes:* Verified working on version 11.2.5.0
+  - *Tested Date:* 2025-10-26
+  - *Version Tested:* 11.2.5.0
+  - *Last Tested:* 2025-10-26
+
+- ✅ **OmniCC**
+  [x] Works / [ ] Workaround / [ ] Will be later / [ ] Not working
+  - *Status:* Works in Midnight Alpha
+  - *Notes:* Verified working on version 11.2.7
+  - *Tested Date:* 2025-10-26
+  - *Version Tested:* 11.2.7
+  - *Last Tested:* 2025-10-26
 
 ### Needs Work from Devs
 
@@ -389,13 +433,6 @@ This document tracks the compatibility status of existing addons with the World 
   - *Version Tested:* 11.2.0
   - *Last Tested:* 2025-10-05
 
-- ❌ **OmniCC**
-  [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
-  - *Status:* Broken
-  - *Notes:* Might not make it into midnight due to api restrictions
-  - *Tested Date:* 2025-10-05
-  - *Version Tested:* 11.2.7
-  - *Last Tested:* 2025-10-05
 
 - ❌ **WIM (WoW Instant Messenger) v3**
   [ ] Works / [ ] Workaround / [ ] Will be later / [x] Not working
@@ -454,6 +491,14 @@ This document tracks the compatibility status of existing addons with the World 
   - *Tested Date:* 
   - *Version Tested:* 
   - *Last Tested:* 2025-10-03
+
+- 🛑 **ElvUI**
+  [ ] Works / [ ] Workaround / [ ] Will be later / [ ] Not working / [x] Not Updating
+  - *Status:* Will not be updated for Midnight
+  - *Notes:* Developer/community announcement indicating ElvUI will not be updated for Midnight. See source: https://discord.com/channels/209244641537556480/737516270290993286/1431599835471155351
+  - *Tested Date:* 2025-10-26
+  - *Version Tested:* 
+  - *Last Tested:* 2025-10-26
 
 ### Untested
 
