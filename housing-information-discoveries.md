@@ -4,10 +4,10 @@
 **Note:** Each neighborhood has 55 spaces for houses.
 
 #### Alliance Neighborhood Plot Layout
-![Alliance NH Plots](images/alliance-NH-plots.png)
+![Alliance NH Plots](docs/images/alliance-NH-plots.png)
 
 #### Horde Neighborhood Plot Layout
-![Horde NH Plots](images/horde-NH-plots.png)
+![Horde NH Plots](docs/images/horde-NH-plots.png)
 
 ### Guild Housing Issues
 - Once the guild neighborhood is established, you need to log out and back in before you can move your house to that neighborhood.
@@ -25,7 +25,7 @@ When searching for neighborhoods, your Guild appears at the top of the finder li
 #### Neighborhood Renaming
 The NPC Lyssabel Dawnpetal, followed by the Neighborhood Steward, sells a renaming scroll that allows you to rename your guild neighborhood. This is useful for customizing your guild's housing area name.
 
-![Neighborhood Renaming Scroll](images/Housing-nh-rename.png)
+![Neighborhood Renaming Scroll](docs/images/Housing-nh-rename.png)
 
 
 ### Large Gathering Spaces
@@ -37,7 +37,7 @@ The stage is large, and the curtains move.
 
 
 #### Example Screenshots
-![Large Gathering Area 1](images/Screenshot%202025-10-03%20132647.png)
+![Large Gathering Area 1](docs/images/Screenshot%202025-10-03%20132647.png)
 
 # Housing Information Discoveries
 
@@ -54,7 +54,7 @@ You can change the material style of the floor, walls, and roof in your house. T
 
 We have control over who can have access to our house. The available options for house permissions are shown in the image below.
 
-![House Settings and Permissions](images/house_settings_and_permissions.png)
+![House Settings and Permissions](docs/images/house_settings_and_permissions.png)
 
 #### Permission Options (from image)
 - Owner: Full control over the house and all settings.
@@ -77,7 +77,7 @@ This section covers decor items and recipes discovered during testing for creati
 Several NPCs around the town center now sell a wide variety of decor items for housing. Many vendors offer up to three pages of items, including furniture, decorations, and other placeable objects to personalize your home.
 
 #### Example Screenshot
-![Decor Vendor](images/decor-vendor-1.png)
+![Decor Vendor](docs/images/decor-vendor-1.png)
 
 ### Lumber Gathering Skill: Lumberjack
 
@@ -91,10 +91,10 @@ You can learn the Lumberjack skill, which allows you to gather lumber for crafti
 Lumber is a key material for crafting furniture and other housing items.
 
 #### Example Screenshot
-![Lumberjack Quest](images/lumberjack-quest.png)
+![Lumberjack Quest](docs/images/lumberjack-quest.png)
 -
 #### Axe for Lumber Gathering
 To gather lumber, you will need an axe. The axe is shown in the following screenshots:
 
-![Lumberjack Axe](images/lumberjack-quest2.png)
-![Lumberjack Axe with Quest Text](images/lumberjack-quest3.png)
+![Lumberjack Axe](docs/images/lumberjack-quest2.png)
+![Lumberjack Axe with Quest Text](docs/images/lumberjack-quest3.png)

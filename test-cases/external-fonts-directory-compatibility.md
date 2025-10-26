@@ -27,11 +27,11 @@ Scenario 1: [x] Pass
 - [Add any observations or screenshots.]
 
 ##### Before Screenshots
-![Default WoW Fonts - Login Screen](images/external-fonts-before.png)
+![Default WoW Fonts - Login Screen](docs/images/external-fonts-before.png)
 
-![Default WoW Fonts - Game Menu](images/external-fonts-before-menu.png)
+![Default WoW Fonts - Game Menu](docs/images/external-fonts-before-menu.png)
 
-![Default WoW Fonts - System Menu](images/external-fonts-before-system.png)
+![Default WoW Fonts - System Menu](docs/images/external-fonts-before-system.png)
 
 ---
 
@@ -60,10 +60,10 @@ Scenario 2: [x] Pass
 
 
 ##### After Replacement Screenshots
-![Custom Fonts - Login Screen](images/external-fonts-after.png)
-![Custom Fonts - Game Menu](images/external-fonts-after-menu.png)
-![Custom Fonts - System Menu](images/external-fonts-after-system.png)
-![Custom Fonts - In-Game](images/Screenshot%202025-10-03%20100709.png)
+![Custom Fonts - Login Screen](docs/images/external-fonts-after.png)
+![Custom Fonts - Game Menu](docs/images/external-fonts-after-menu.png)
+![Custom Fonts - System Menu](docs/images/external-fonts-after-system.png)
+![Custom Fonts - In-Game](docs/images/Screenshot%202025-10-03%20100709.png)
 
 ---
 

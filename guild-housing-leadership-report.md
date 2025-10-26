@@ -12,8 +12,8 @@ This report is designed to inform guild leadership about the new Housing system 
 
 **Visual References:**
 
-- Alliance Layout: ![Alliance NH Plots](images/alliance-NH-plots.png)
-- Horde Layout: ![Horde NH Plots](images/horde-NH-plots.png)
+- Alliance Layout: ![Alliance NH Plots](docs/images/alliance-NH-plots.png)
+- Horde Layout: ![Horde NH Plots](docs/images/horde-NH-plots.png)
 
 ---
 
@@ -42,7 +42,7 @@ Current permission options (subject to change):
 Flexible access supports both private and social playstyles.
 
 **Visual Reference:**
-![House Settings and Permissions](images/house_settings_and_permissions.png)
+![House Settings and Permissions](docs/images/house_settings_and_permissions.png)
 
 ### 3.1 Player Warband Access
 
@@ -61,8 +61,8 @@ All characters in a player's warband can visit the guild house, even if they are
 
 **Visual References:**
 
-- Decor Vendor: ![Decor Vendor](images/decor-vendor-1.png)
-- Gathering Area: ![Large Gathering Area 1](images/Screenshot%202025-10-03%20132647.png)
+- Decor Vendor: ![Decor Vendor](docs/images/decor-vendor-1.png)
+- Gathering Area: ![Large Gathering Area 1](docs/images/Screenshot%202025-10-03%20132647.png)
 
 ---
 
@@ -72,7 +72,7 @@ All characters in a player's warband can visit the guild house, even if they are
 
 **Visual Reference:**
 
-- ![Neighborhood Renaming Scroll](images/Housing-nh-rename.png)
+- ![Neighborhood Renaming Scroll](docs/images/Housing-nh-rename.png)
 
 ---
 
@@ -85,8 +85,8 @@ All characters in a player's warband can visit the guild house, even if they are
 
 **Visual References:**
 
-- Lumberjack Quest: ![Lumberjack Quest](images/lumberjack-quest.png)
-- Axe: ![Lumberjack Axe](images/lumberjack-quest2.png) ![Lumberjack Axe with Quest Text](images/lumberjack-quest3.png)
+- Lumberjack Quest: ![Lumberjack Quest](docs/images/lumberjack-quest.png)
+- Axe: ![Lumberjack Axe](docs/images/lumberjack-quest2.png) ![Lumberjack Axe with Quest Text](docs/images/lumberjack-quest3.png)
 
 ---
 

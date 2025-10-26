@@ -14,8 +14,8 @@ This document informs guild leadership about the housing system, summarizes key 
 
 Visual references:
 
-- Alliance Layout: ![Alliance NH Plots](images/alliance-NH-plots.png)
-- Horde Layout: ![Horde NH Plots](images/horde-NH-plots.png)
+- Alliance Layout: ![Alliance NH Plots](docs/images/alliance-NH-plots.png)
+- Horde Layout: ![Horde NH Plots](docs/images/horde-NH-plots.png)
 
 ## 3. Guild Housing Mechanics
 
@@ -39,7 +39,7 @@ Current permission options (subject to change):
     - **Public:** Visit only, no changes
 Flexible access supports both private and social playstyles.
 
-Visual reference: ![House Settings and Permissions](images/house_settings_and_permissions.png)
+Visual reference: ![House Settings and Permissions](docs/images/house_settings_and_permissions.png)
 
 ### 4.1 Player Warband Access
 
@@ -59,8 +59,8 @@ All characters in a player's warband can visit that player's guild house, even i
 
 Visual references:
 
-- Lumberjack Quest: ![Lumberjack Quest](images/lumberjack-quest.png)
-- Axe: ![Lumberjack Axe](images/lumberjack-quest2.png) ![Lumberjack Axe with Quest Text](images/lumberjack-quest3.png)
+- Lumberjack Quest: ![Lumberjack Quest](docs/images/lumberjack-quest.png)
+- Axe: ![Lumberjack Axe](docs/images/lumberjack-quest2.png) ![Lumberjack Axe with Quest Text](docs/images/lumberjack-quest3.png)
 
 ## 7. Endeavors
 
