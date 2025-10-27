@@ -128,5 +128,34 @@ Create a Housing Thread in #Alliance for questions and ongoing updates after the
 
 ---
 
+
 Prepared by the Midnight Housing Testing Team
+
+---
+
+# Questions and Answers
+
+**Q: When will guild housing be available?**
+A: Guild housing is scheduled to be enabled during the prepatch (version 11.2.7), but release dates may change. Watch for official updates.
+
+**Q: Can I move into a guild house if I haven’t pre-purchased Midnight?**
+A: No, only members who have pre-purchased the Midnight expansion can move into a guild house.
+
+**Q: What happens if I am removed for inactivity?**
+A: Your house and contents are moved to secure storage. You can reclaim your house when you return and a plot is available.
+
+**Q: How do I get the Lumberjack skill?**
+A: Learn Lumberjack from Lestia Goldenstrike in town. You’ll need an axe to gather lumber for housing items.
+
+**Q: Can all my characters visit my guild house?**
+A: Yes, all characters in your warband can visit your guild house, even if they are not in the guild.
+
+**Q: What if all 55 plots are full?**
+A: The system creates additional layers (overflow neighborhoods) if demand exceeds 55 plots. Leadership will monitor and communicate availability.
+
+**Q: Where can I ask more questions?**
+A: Use the #Alliance Housing Thread for ongoing questions and updates.
+
+**Q: What do I do if my Horde and Alliance characters are all in the Alliance neighborhood? Can I still create a Horde house in a Horde neighborhood?**
+A: Yes. Any Horde character can create a house in a Horde neighborhood, whether it is a private house or part of a Horde guild neighborhood. If your Horde character is in a Horde guild, they can join the Horde guild neighborhood. The same applies for Alliance characters and neighborhoods. Your characters are not restricted by where your other faction characters have houses; each character can create or join a house in their own faction's neighborhood as long as they meet the requirements.
 

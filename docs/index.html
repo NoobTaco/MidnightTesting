@@ -7,112 +7,108 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'],
+          },
+        },
+      },
+    }
+  </script>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
-    body{background:linear-gradient(180deg,#071026 0%, #071728 100%);color:#e6eef6;line-height:1.5}
-    .wrap{max-width:1100px;margin:36px auto;padding:24px}
-    header{display:flex;gap:18px;align-items:center;margin-bottom:18px}
-    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),#2ea6ff);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
-    h1{font-size:20px;margin:0}
-    .meta{color:var(--muted);font-size:13px}
-    .layout{display:flex;gap:28px;margin-top:18px}
-    nav.toc{min-width:220px;background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;height:fit-content;position:sticky;top:18px}
-    nav.toc h3{margin:0 0 8px 0;font-size:13px}
-    nav.toc a{display:block;color:var(--muted);text-decoration:none;padding:6px 0;border-radius:6px}
-    nav.toc a:hover{color:#fff}
-    main.article{flex:1;background:rgba(255,255,255,0.02);padding:24px;border-radius:12px}
-    main.article h2{margin-top:8px}
-    .muted{color:var(--muted)}
-    img.figure{max-width:100%;border-radius:8px;margin:12px 0}
-    ul,ol{margin-left:1.2rem}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:8px}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    @media (max-width:900px){.layout{flex-direction:column}.toc{position:relative;min-width:auto}}
+    .bg-custom-gradient { background: linear-gradient(180deg, #071026 0%, #071728 100%); }
+    .bg-card { background: rgba(255,255,255,0.02); }
+    .text-muted { color: #9aa4b2; }
+    .text-accent { color: #7c3aed; }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="logo">MH</div>
+<body class="min-h-screen bg-custom-gradient text-slate-100 font-sans leading-relaxed">
+  <div class="max-w-6xl mx-auto my-9 p-6">
+    <header class="flex gap-4.5 items-center mb-4.5">
+      <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center font-bold text-white">MH</div>
       <div>
-        <h1>Guild Housing — Member Brief (Draft)</h1>
-        <div class="meta">Prepared by the Midnight Housing Testing Team — concise summary for guild leadership and members</div>
+        <h1 class="text-xl m-0">Guild Housing — Member Brief (Draft)</h1>
+        <div class="text-muted text-sm">Prepared by the Midnight Housing Testing Team — concise summary for guild leadership and members</div>
       </div>
     </header>
 
-    <div class="layout">
-      <nav class="toc" aria-label="Table of contents">
-        <h3>Contents</h3>
-        <a href="#purpose">1. Purpose</a>
-        <a href="#neighborhood">2. Neighborhood &amp; Plot Layout</a>
-        <a href="#mechanics">3. Guild Housing Mechanics</a>
-        <a href="#permissions">4. Permissions &amp; Access</a>
-        <a href="#customization">5. Customization &amp; Decor</a>
-        <a href="#gathering">6. Gathering &amp; Crafting</a>
-        <a href="#endeavors">7. Endeavors</a>
-        <a href="#recommendations">8. Recommendations</a>
-        <a href="#questions">9. Open Questions</a>
-        <a href="#calltoaction">10. Call to Action</a>
-        <a href="#policy">11. Activity &amp; Retention Policy</a>
-        <a href="#thread">12. Alliance Housing Thread</a>
+    <div class="flex gap-7 mt-4.5 md:flex-row flex-col">
+      <nav class="toc md:min-w-[220px] md:sticky md:top-4.5 bg-card p-3.5 rounded-xl h-fit" aria-label="Table of contents">
+        <h3 class="m-0 mb-2 text-sm">Contents</h3>
+        <a href="#purpose" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">1. Purpose</a>
+        <a href="#neighborhood" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">2. Neighborhood &amp; Plot Layout</a>
+        <a href="#mechanics" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">3. Guild Housing Mechanics</a>
+        <a href="#permissions" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">4. Permissions &amp; Access</a>
+        <a href="#customization" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">5. Customization &amp; Decor</a>
+        <a href="#gathering" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">6. Gathering &amp; Crafting</a>
+        <a href="#endeavors" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">7. Endeavors</a>
+        <a href="#recommendations" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">8. Recommendations</a>
+        <a href="#questions" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">9. Open Questions</a>
+        <a href="#calltoaction" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">10. Call to Action</a>
+        <a href="#policy" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">11. Activity &amp; Retention Policy</a>
+        <a href="#thread" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">12. Alliance Housing Thread</a>
+        <a href="#qa" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">13. Questions and Answers</a>
       </nav>
 
-      <main class="article">
+      <main class="article flex-1 bg-card p-6 rounded-xl">
         <section id="purpose">
-          <h2>1. Purpose</h2>
+          <h2 class="mt-2">1. Purpose</h2>
           <p>This document informs guild leadership about the housing system, summarizes key discoveries and features, and provides recommendations for managing housing for a large guild (500+ members).</p>
         </section>
 
         <section id="neighborhood">
-          <h2>2. Neighborhood &amp; Plot Layout</h2>
-          <ul>
+          <h2 class="mt-2">2. Neighborhood &amp; Plot Layout</h2>
+          <ul class="ml-5">
             <li>Each neighborhood contains 55 house plots.</li>
             <li>Alliance and Horde have distinct neighborhood layouts.</li>
             <li>Guilds can establish a guild neighborhood, which provides a central hub for members.</li>
           </ul>
-          <div class="card">
-            <strong class="muted">Visual references</strong>
+          <div class="bg-gradient-to-b from-white/2 to-transparent p-3.5 rounded-lg">
+            <strong class="text-muted">Visual references</strong>
             <div>
-              <img class="figure" src="images/alliance-NH-plots.png" alt="Alliance neighborhood plots">
-              <img class="figure" src="images/horde-NH-plots.png" alt="Horde neighborhood plots">
+              <img class="max-w-full rounded-lg my-3" src="images/alliance-NH-plots.png" alt="Alliance neighborhood plots">
+              <img class="max-w-full rounded-lg my-3" src="images/horde-NH-plots.png" alt="Horde neighborhood plots">
             </div>
           </div>
         </section>
 
         <section id="mechanics">
-          <h2>3. Guild Housing Mechanics</h2>
-          <ul>
+          <h2 class="mt-2">3. Guild Housing Mechanics</h2>
+          <ul class="ml-5">
             <li>After establishing a guild neighborhood, members may need to log out and back in before moving their house into the new neighborhood.</li>
             <li>Your guild appears at the top of the neighborhood finder list, making it easy for members to find and join.</li>
           </ul>
-          <p class="muted">Important notes:</p>
-          <ul>
+          <p class="text-muted">Important notes:</p>
+          <ul class="ml-5">
             <li>Members cannot move into a house unless they have pre-purchased the Midnight expansion.</li>
             <li>Housing is scheduled to be enabled during the prepatch (version 11.2.7); estimated release dates may change.</li>
           </ul>
         </section>
 
         <section id="permissions">
-          <h2>4. Permissions &amp; Access Control</h2>
+          <h2 class="mt-2">4. Permissions &amp; Access Control</h2>
           <p>Permission settings exist in guild ranks, but the full management page is not yet released.</p>
           <h3>Per house permissions</h3>
-          <ul>
+          <ul class="ml-5">
             <li><strong>Owner:</strong> Full control</li>
             <li><strong>Friends:</strong> Visit/interact (cannot change settings)</li>
             <li><strong>Guild Members:</strong> Visit/interact (cannot change settings unless explicitly allowed)</li>
             <li><strong>Public:</strong> Visit only (no changes)</li>
           </ul>
-          <div class="card">
-            <img class="figure" src="images/house_settings_and_permissions.png" alt="House Settings and Permissions">
+          <div class="bg-gradient-to-b from-white/2 to-transparent p-3.5 rounded-lg">
+            <img class="max-w-full rounded-lg my-3" src="images/house_settings_and_permissions.png" alt="House Settings and Permissions">
           </div>
           <h4 id="warband">4.1 Player Warband Access</h4>
           <p>All characters in a player's warband can visit that player's guild house, even if the character is not in the guild. This is a player-specific feature, not a guild-wide permission.</p>
         </section>
 
         <section id="customization">
-          <h2>5. Customization &amp; Decor</h2>
-          <ul>
+          <h2 class="mt-2">5. Customization &amp; Decor</h2>
+          <ul class="ml-5">
             <li>Houses support customization of floors, walls, and roofs.</li>
             <li>Decor items can be crafted or purchased from vendors (vendors currently show up to three pages of items).</li>
             <li>Large gathering spaces (stages, audience seating) exist — useful for events.</li>
@@ -120,34 +116,34 @@
         </section>
 
         <section id="gathering">
-          <h2>6. Gathering &amp; Crafting</h2>
-          <ul>
+          <h2 class="mt-2">6. Gathering &amp; Crafting</h2>
+          <ul class="ml-5">
             <li>The Lumberjack skill is required to gather lumber for housing items.</li>
             <li>Learn Lumberjack from Lestia Goldenstrike (in town).</li>
             <li>Example quest rewards: Lumberjack skill, coin, and XP.</li>
             <li>An axe is required for lumber gathering.</li>
           </ul>
-          <div class="card">
-            <img class="figure" src="images/lumberjack-quest.png" alt="Lumberjack quest">
-            <img class="figure" src="images/lumberjack-quest2.png" alt="Lumberjack axe">
-            <img class="figure" src="images/lumberjack-quest3.png" alt="Lumberjack quest text">
+          <div class="bg-gradient-to-b from-white/2 to-transparent p-3.5 rounded-lg">
+            <img class="max-w-full rounded-lg my-3" src="images/lumberjack-quest.png" alt="Lumberjack quest">
+            <img class="max-w-full rounded-lg my-3" src="images/lumberjack-quest2.png" alt="Lumberjack axe">
+            <img class="max-w-full rounded-lg my-3" src="images/lumberjack-quest3.png" alt="Lumberjack quest text">
           </div>
         </section>
 
         <section id="endeavors">
-          <h2>7. Endeavors</h2>
+          <h2 class="mt-2">7. Endeavors</h2>
           <p>Endeavors will not be required for participation in guild housing. Participation is voluntary, and we expect many members may opt in once the system is live.</p>
         </section>
 
         <section id="recommendations">
-          <h2>8. Recommendations for Large Guilds</h2>
+          <h2 class="mt-2">8. Recommendations for Large Guilds</h2>
           <h3>8.1 Neighborhood Layers &amp; Lot Allotment</h3>
-          <ul>
+          <ul class="ml-5">
             <li>Only one main guild neighborhood (NH) exists. If demand exceeds 55 plots, the system creates additional layers (overflow).</li>
             <li>The exact occupancy threshold that triggers a new layer is not confirmed (devs mentioned ~80% in some statements). Leadership should monitor official updates.</li>
           </ul>
-          <p class="muted">Considerations and suggested approach:</p>
-          <ol>
+          <p class="text-muted">Considerations and suggested approach:</p>
+          <ol class="ml-5">
             <li>Assign officers to monitor layer occupancy and member distribution.</li>
             <li>Encourage members to consolidate into the most active layers to preserve community feel.</li>
             <li>Create a clear lot-allocation policy (e.g., first-come, officer approval, event-based rewards).</li>
@@ -157,8 +153,8 @@
         </section>
 
         <section id="questions">
-          <h2>9. Open Questions &amp; To-Do</h2>
-          <ul>
+          <h2 class="mt-2">9. Open Questions &amp; To-Do</h2>
+          <ul class="ml-5">
             <li>Await release of the full guild management page for housing.</li>
             <li>Test permission settings for Friends, Guild Members, and Public when the UI is available.</li>
             <li>Monitor for additional decor, crafting, and event-related features in future updates.</li>
@@ -166,29 +162,29 @@
         </section>
 
         <section id="calltoaction">
-          <h2>10. Call to Action — Member Participation</h2>
+          <h2 class="mt-2">10. Call to Action — Member Participation</h2>
           <h3>10.1 PTR Participation</h3>
           <p>If another PTR (Public Test Realm) event is available, we encourage as many members as possible to log in and be invited into the PTR guild. This helps test layering and plot visibility.</p>
           <h3>10.2 Open Beta Participation</h3>
-          <ul>
+          <ul class="ml-5">
             <li>Open Beta requires pre-purchasing the Midnight expansion.</li>
             <li>We will need an initial group to create the guild and establish housing (approx. 5 to create + 5 additional to set up housing). Afterward, invite interested members to the Beta guild for broader testing.</li>
           </ul>
         </section>
 
         <section id="policy">
-          <h2>11. Guild Activity &amp; Retention Policy (Draft)</h2>
+          <h2 class="mt-2">11. Guild Activity &amp; Retention Policy (Draft)</h2>
           <p>Effective date: TBD — policy to be applied with the Midnight expansion launch.</p>
           <h3>11.1 Purpose</h3>
           <p>Keep the Guild Neighborhood active while providing a fair process for members who are inactive for extended periods.</p>
           <h3>11.2 Members with Guild Housing</h3>
-          <ul>
+          <ul class="ml-5">
             <li>Rule: Members who occupy a guild housing plot and are inactive for two (2) months may be removed from the guild roster to free plots for active members. (Details subject to available in-game tools and final design.)</li>
             <li>Your property is not lost — the game moves the home and contents into secure housing storage.</li>
             <li>Returning members can request a guild invite and reclaim their house from storage when a plot is available.</li>
           </ul>
           <h3>11.3 Members without Guild Housing</h3>
-          <ul>
+          <ul class="ml-5">
             <li>Rule: Members without a housing plot may be removed for one (1) year of inactivity.</li>
           </ul>
           <h3>11.4 Returning to the Guild</h3>
@@ -196,12 +192,34 @@
         </section>
 
         <section id="thread">
-          <h2>12. Alliance Housing Thread &amp; Ongoing Discussion</h2>
+          <h2 class="mt-2">12. Alliance Housing Thread &amp; Ongoing Discussion</h2>
           <p>Create a Housing Thread in <code>#Alliance</code> for questions and ongoing updates after the meeting. This report will be updated as new information becomes available.</p>
         </section>
 
-        <footer>
-          <p class="muted">Prepared by the Midnight Housing Testing Team</p>
+        <section id="qa">
+          <h2 class="mt-2">Questions and Answers</h2>
+          <ul class="ml-5">
+            <li><strong>Q: When will guild housing be available?</strong><br>
+            A: Guild housing is scheduled to be enabled during the prepatch (version 11.2.7), but release dates may change. Watch for official updates.</li>
+            <li><strong>Q: Can I move into a guild house if I haven’t pre-purchased Midnight?</strong><br>
+            A: No, only members who have pre-purchased the Midnight expansion can move into a guild house.</li>
+            <li><strong>Q: What happens if I am removed for inactivity?</strong><br>
+            A: Your house and contents are moved to secure storage. You can reclaim your house when you return and a plot is available.</li>
+            <li><strong>Q: How do I get the Lumberjack skill?</strong><br>
+            A: Learn Lumberjack from Lestia Goldenstrike in town. You’ll need an axe to gather lumber for housing items.</li>
+            <li><strong>Q: Can all my characters visit my guild house?</strong><br>
+            A: Yes, all characters in your warband can visit your guild house, even if they are not in the guild.</li>
+            <li><strong>Q: What if all 55 plots are full?</strong><br>
+            A: The system creates additional layers (overflow neighborhoods) if demand exceeds 55 plots. Leadership will monitor and communicate availability.</li>
+            <li><strong>Q: Where can I ask more questions?</strong><br>
+            A: Use the #Alliance Housing Thread for ongoing questions and updates.</li>
+            <li><strong>Q: What do I do if my Horde and Alliance characters are all in the Alliance neighborhood? Can I still create a Horde house in a Horde neighborhood?</strong><br>
+            A: Yes. Any Horde character can create a house in a Horde neighborhood, whether it is a private house or part of a Horde guild neighborhood. If your Horde character is in a Horde guild, they can join the Horde guild neighborhood. The same applies for Alliance characters and neighborhoods. Your characters are not restricted by where your other faction characters have houses; each character can create or join a house in their own faction's neighborhood as long as they meet the requirements.</li>
+          </ul>
+        </section>
+
+        <footer class="mt-4.5 text-muted text-sm">
+          <p>Prepared by the Midnight Housing Testing Team</p>
         </footer>
       </main>
     </div>
