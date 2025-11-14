@@ -155,6 +155,8 @@ This can result in some layers being sparsely populated, which may impact commun
 10. **Guild participation in open Beta:**
    - To participate in the open Beta, you must have pre-purchased the Midnight expansion.
    - When the open Beta begins, we will need 5 people to help create the guild and 5 more (for a total of 10) to establish the guild housing. Afterward, all interested members will be invited into the Beta guild for further housing system testing.
+   - **Important:** Testing has confirmed that only the Guild Master has the authority to establish a guild neighborhood. This safeguard ensures proper setup and prevents unintended actions by other guild members.
+   - **Cross-Faction Charter Signing:** Our testing confirmed that cross-faction members can sign a guild charter. While this doesn't impact our established guild, it may be useful information for others forming new guilds in Midnight.
 
 ---
 
