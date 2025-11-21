@@ -196,6 +196,10 @@ We understand that real life comes first. Removal for inactivity is not a punish
 
 If you have been removed under this policy, please contact an Officer or Guild Master for a new invitation. All of your progress and property will be waiting for you.
 
+### Launch Day Etiquette
+
+As we settle into our new neighborhood, please remember that we are all adults here to have fun. We expect everyone to treat each other with patience and respect during the initial rush. If your preferred plot is already taken, simply claim a different one or wait for a new neighborhood layer to open up. There is a home for everyone; let’s keep the vibe positive!
+
 ---
 
 ## Alliance Housing Thread & Ongoing Discussion
