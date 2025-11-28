@@ -1,4 +1,4 @@
-# Old Timers Guild (Alliance) - Guild Activity & Retention Policy
+# Old Timers Guild (Alliance) - Guild Housing Activity & Retention Policy
 
 **Effective Date: 12/02/2025**
 
