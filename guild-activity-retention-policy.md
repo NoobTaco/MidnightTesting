@@ -6,7 +6,7 @@
 
 The Guild Neighborhood will be officially established by **Aerythe** on **December 2, 2025, at 6:00 PM EST** (or as soon as the servers are live).
 
-- **Finding Us:** The specific name of our neighborhood will be posted in the `#alliance` Discord channel immediately after creation. Please look there for the correct location to join.
+- **Finding Us:** The specific name of our neighborhood will be posted in the `#alliance` Discord channel and the **Alliance OTG Forums** immediately after creation. Please look there for the correct location to join.
 - **Patience Required:** Launch days can be chaotic. We ask for your patience as we get everything set up and settled.
 
 ## 1. Purpose
