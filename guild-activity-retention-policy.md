@@ -2,6 +2,13 @@
 
 **Effective Date: 12/02/2025**
 
+## Neighborhood Formation & Launch Details
+
+The Guild Neighborhood will be officially established by **Aerythe** on **December 2, 2025, at 6:00 PM EST** (or as soon as the servers are live).
+
+- **Finding Us:** The specific name of our neighborhood will be posted in the `#alliance` Discord channel immediately after creation. Please look there for the correct location to join.
+- **Patience Required:** Launch days can be chaotic. We ask for your patience as we get everything set up and settled.
+
 ## 1. Purpose
 
 To ensure a vibrant and active community, especially within the new Guild Neighborhood, we are implementing the following activity policy. This policy aims to keep our shared spaces populated by active members while providing a clear and fair process for members who take a break from the game.
