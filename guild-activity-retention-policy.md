@@ -35,6 +35,13 @@ We understand that real life comes first. Removal for inactivity is not a punish
 
 If you have been removed under this policy, please contact an Officer or Guild Master for a new invitation. All of your progress and property will be waiting for you.
 
+## 5. Activity Measurement for Alts & Sister Guild Members
+
+We recognize that many members split their time between factions. If you are primarily active in our sister Horde guild but maintain a presence here:
+
+- **Endeavor System:** We can track contributions to the Alliance Endeavor system via the guild logs.
+- **Recognized Activity:** If you actively contribute to Endeavors—whether on an Alliance alt or a Horde alt that has selected the Alliance neighborhood for contributions—this will be counted as "active playing" for the purpose of this policy. This ensures your housing status is secure even if your playtime is lower on this specific character.
+
 ## Launch Day Etiquette
 
 As we settle into our new neighborhood, please remember that we are all adults here to have fun. We expect everyone to treat each other with patience and respect during the initial rush. If your preferred plot is already taken, simply claim a different one or wait for a new neighborhood layer to open up. There is a home for everyone; let’s keep the vibe positive!
