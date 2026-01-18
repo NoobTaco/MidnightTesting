@@ -113,16 +113,19 @@ This document tracks testing progress for addon features and game features in pr
       - [ ] **Guild Neighborhoods**
         - [ ] Guild creation and management
         - [ ] Guild member permissions
-        - [ ] Guild house coordination
+      - [ ] Guild house coordination
+- ✅ **House Interior Materials**
+  - ✅ Customization of floor materials
+  - ✅ Customization of wall materials
+  - ✅ Customization of roof materials
         
   - [ ] **Customization Systems**
-    - [ ] **Interior Design**
-      - ✅ Basic Mode functionality
-      - ✅ Advanced Mode capabilities
-      - ✅ Décor placement and positioning
-      - ✅ Item resizing functionality
-      - ✅ Dye system for select items
       - ✅ Free placement validation (anywhere in house)
+- ✅ **Profession & Gathering: Lumberjack**
+  - ✅ Lumberjack skill acquisition (Lestia Goldenstrike)
+  - ✅ Lumber gathering mechanics
+  - ✅ Tool requirements (Lumberjack Axe)
+  - ✅ Lumber usage in housing recipes
     - [ ] **Exterior Customization**
       - [ ] Barber shop-like interface
       - [ ] **Themed Kits Testing**

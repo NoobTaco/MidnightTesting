@@ -1,5 +1,7 @@
 # NoobTaco's Midnight Testing
 
+**[Live Dashboard](https://noobtaco.github.io/MidnightTesting/)**
+
 A comprehensive tracking and documentation project for World of Warcraft addon and game feature testing in the Midnight expansion.
 
 ## Overview
@@ -9,8 +11,10 @@ This repository is dedicated to:
 - Organizing findings for easy reference and future wiki publication
 
 ## Contents
+- `docs/index.html` — The source for the hosted dashboard
 - `midnight-testing-tracker.md` — Master checklist for addon and game feature testing
 - `addon-compatibility-tracker.md` — Status and notes for all tested addons
+- `otg/` — Documents specifically related to the Old Timers Guild
 - `.gitignore` — Standard ignore rules for development
 
 ## Getting Started

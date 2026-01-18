@@ -1,228 +1,1039 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Guild Housing — Member Brief</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial'],
-          },
-        },
-      },
-    }
-  </script>
-  <style>
-    .bg-custom-gradient { background: linear-gradient(180deg, #071026 0%, #071728 100%); }
-    .bg-card { background: rgba(255,255,255,0.02); }
-    .text-muted { color: #9aa4b2; }
-    .text-accent { color: #7c3aed; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Testing Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    
+
+    <style>
+        :root {
+            --nt-primary: #D78144;      /* Burnt Sienna */
+            --nt-dark: #1B263B;         /* Charcoal Navy */
+            --nt-highlight: #F4A261;    /* Golden Hour */
+            --nt-secondary: #E9C46A;    /* Sandstone */
+            --nt-bg: #0f131a;           /* Deep Dark Background */
+            --nt-white: #F8F9FA;        /* Cloud White */
+            
+            /* Text Variables - missed previously */
+            --text-primary: var(--nt-white);
+            --text-secondary: rgba(248, 249, 250, 0.7);
+            
+            --bg-deep: var(--nt-bg);
+            --bg-sidebar: rgba(27, 38, 59, 0.85);
+            --border: rgba(215, 129, 68, 0.3);
+            
+            --success: #10b981;
+            --warning: var(--nt-secondary);
+            --error: #ef4444;
+            --info: #3b82f6;
+            --discontinued: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-deep);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(215, 129, 68, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 40%);
+            color: var(--text-primary);
+            display: flex;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Glass Utility Class */
+        .glass-panel {
+            background: rgba(27, 38, 59, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-highlight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(244, 162, 97, 0) 0%, rgba(244, 162, 97, 0.5) 50%, rgba(244, 162, 97, 0) 100%);
+            z-index: 1;
+        }
+        
+        .specular-highlight {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(244, 162, 97, 0.1) 0%, rgba(215, 129, 68, 0) 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Sidebar Styles */
+        aside {
+            width: 280px;
+            background-color: var(--bg-sidebar);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-right: 1px solid var(--border);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            height: 100vh;
+            z-index: 100;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .logo-box {
+            width: 44px;
+            height: 44px;
+            background: var(--nt-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: var(--nt-dark);
+            box-shadow: 0 0 15px rgba(215, 129, 68, 0.4);
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--nt-white);
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            color: rgba(248, 249, 250, 0.7);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+        nav a:hover, nav a.active {
+            background: rgba(215, 129, 68, 0.15);
+            color: var(--nt-white);
+            border: 1px solid rgba(215, 129, 68, 0.2);
+        }
+        
+        nav a.active {
+            box-shadow: 0 0 10px rgba(215, 129, 68, 0.1);
+        }
+
+        /* Main Content Styles */
+        main {
+            flex: 1;
+            margin-left: 280px;
+            padding: 3rem;
+            max-width: 1600px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #F8F9FA 0%, #E9C46A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: rgba(27, 38, 59, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px rgba(215, 129, 68, 0.2);
+            border-color: var(--nt-primary);
+        }
+
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--nt-white);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stat-label {
+            color: rgba(248, 249, 250, 0.9); /* High contrast white */
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        /* Cards */
+        .card {
+            background: rgba(27, 38, 59, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Add specular highlight to all cards */
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(244, 162, 97, 0.05) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .card-header, .table-container, .filter-controls, p, h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--nt-white);
+        }
+
+        /* Filter Buttons */
+        .filter-controls {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: inherit;
+            font-weight: 500;
+            backdrop-filter: blur(4px);
+        }
+
+        .filter-btn:hover {
+            background: rgba(215, 129, 68, 0.1);
+            border-color: var(--nt-primary);
+            color: var(--nt-white);
+            transform: translateY(-1px);
+        }
+
+        .filter-btn.active {
+            background: var(--nt-primary);
+            color: var(--nt-dark);
+            border-color: var(--nt-primary);
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(215, 129, 68, 0.3);
+        }
+
+        /* Table Styles */
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 4px; /* Space between rows */
+            font-size: 0.95rem;
+            min-width: 800px;
+        }
+
+        th {
+            text-align: left;
+            color: var(--text-secondary);
+            font-weight: 600;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 1.2rem 1rem;
+            vertical-align: middle;
+            background: rgba(255, 255, 255, 0.02);
+            transition: background 0.2s;
+        }
+        
+        td:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+        td:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+        
+        tr.addon-row:hover td {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .badge {
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .badge-success { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .badge-warning { background: rgba(233, 196, 106, 0.2); color: #fcd34d; border: 1px solid rgba(233, 196, 106, 0.3); }
+        .badge-error { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .badge-info { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+        .badge-discontinued { background: rgba(100, 116, 139, 0.2); color: #94a3b8; border: 1px solid rgba(100, 116, 139, 0.3); }
+
+        .addon-name {
+            font-weight: 700;
+            color: var(--nt-white);
+            font-size: 1rem;
+        }
+
+        .addon-version {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        .notes {
+            color: rgba(248, 249, 250, 0.8);
+            line-height: 1.4;
+        }
+        
+        .link-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.05);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            transition: all 0.2s;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .link-tag:hover {
+            background: var(--nt-primary);
+            color: var(--nt-dark);
+            border-color: var(--nt-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            aside {
+                transform: translateX(-100%);
+            }
+            main {
+                margin-left: 0;
+                padding: 1.5rem;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            h1 { font-size: 2.2rem; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .card { padding: 1.25rem; }
+            td, th { padding: 0.75rem 0.5rem; }
+        }
+    </style>
+    
 </head>
-<body class="min-h-screen bg-custom-gradient text-slate-100 font-sans leading-relaxed">
-  <div class="max-w-6xl mx-auto my-9 p-6">
-    <header class="flex gap-4.5 items-center mb-4.5">
-      <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-500 rounded-xl flex items-center justify-center font-bold text-white">MH</div>
-      <div>
-        <h1 class="text-xl m-0">Guild Housing — Member Brief (Draft)</h1>
-        <div class="text-muted text-sm">Prepared by the Midnight Housing Testing Team (Alliance Guild) — concise summary for guild leadership and members</div>
-      </div>
-    </header>
-
-    <div class="flex gap-7 mt-4.5 md:flex-row flex-col">
-      <nav class="toc md:min-w-[220px] md:sticky md:top-4.5 bg-card p-3.5 rounded-xl h-fit" aria-label="Table of contents">
-        <h3 class="m-0 mb-2 text-sm">Contents</h3>
-        <a href="#purpose" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">1. Purpose</a>
-        <a href="#neighborhood" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">2. Neighborhood &amp; Plot Layout</a>
-        <a href="#mechanics" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">3. Guild Housing Mechanics</a>
-        <a href="#permissions" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">4. Permissions &amp; Access</a>
-        <a href="#customization" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">5. Customization &amp; Decor</a>
-        <a href="#gathering" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">6. Gathering &amp; Crafting</a>
-        <a href="#endeavors" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">7. Endeavors</a>
-        <a href="#recommendations" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">8. Recommendations</a>
-        <a href="#questions" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">9. Open Questions</a>
-        <a href="#calltoaction" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">10. Call to Action</a>
-        <a href="#policy" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">11. Activity &amp; Retention Policy</a>
-        <a href="#thread" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">12. Alliance Housing Thread</a>
-        <a href="#qa" class="block text-muted no-underline py-1.5 px-0 rounded-md hover:text-white">13. Questions and Answers</a>
-      </nav>
-
-      <main class="article flex-1 bg-card p-6 rounded-xl">
-        <section id="purpose">
-          <h2 class="mt-2">1. Purpose</h2>
-          <p>This document informs guild leadership about the housing system, summarizes key discoveries and features, and provides recommendations for managing housing for a large guild (500+ members).</p>
-        </section>
-
-        <section id="neighborhood">
-          <h2 class="mt-2">2. Neighborhood &amp; Plot Layout</h2>
-          <ul class="ml-5">
-            <li>Each neighborhood contains 55 house plots.</li>
-            <li>Alliance and Horde have distinct neighborhood layouts.</li>
-            <li>Guilds can establish a guild neighborhood, which provides a central hub for members.</li>
-          </ul>
-          <div class="bg-gradient-to-b from-white/2 to-transparent p-3.5 rounded-lg">
-            <strong class="text-muted">Visual references</strong>
-            <div>
-              <img class="max-w-full rounded-lg my-3" src="images/alliance-NH-plots.png" alt="Alliance neighborhood plots">
-              <img class="max-w-full rounded-lg my-3" src="images/horde-NH-plots.png" alt="Horde neighborhood plots">
+<body>
+    
+    <aside>
+        <div class="logo-container">
+            <div class="logo-box">
+                <svg viewBox="550 310 320 500" width="32" height="32" style="position: relative; z-index: 2;">
+                    <g id="Viking_Icon">
+                        <path fill="#1B263B" d="M592.5,636.9c0,0-0.1,1-0.1,2.8c-0.3,6.1-0.7,21.8,1.1,40c2.5,25.4,5.4,51.6,30.1,68c0,0-2.2-26.2,8.2-47 c0,0,0.7,50,34.8,75.6c0,0-5.9-18.5,4.4-39.7c0,0,33,40.4,34.1,71.2c0,0,19.3-41.9,23-77.5c0,0,17.3,26.9,16.2,44 c0,0,27.2-47.4,26-87.2c-0.2-5.2,0.2-8.5-0.7-12.7c0,0,4.6,3.6,8.8,12.7c3.4,7.3,5.1,9.9,5.6,22.1c0,0,6.8-11.7,11.6-29.5 c4.3-16.1,8.5-36.5,3.3-58.7c0.4,1.3,12,44.1,11.6,58.7c0,0,0,0,0.1-0.1c0,0,0.1-0.1,0.1-0.1c1.7-3.2,17.4-34,22.8-80.6 c3.3-27.7,2.9-61.1-6.2-97.6c0,0-23.2,21.5-43,25c0,0-11.9,44.2-47.4,62.5c0,0,11.9-2,23.2,17.3c10.6,17.9,20.5,8,21.8,6.6 c-1.8,2.2-21,24-52,12.7c-32.6-11.9-31.6-14.8-37.6-14.3l0,0h0l0,0c-5.9-0.5-4.9,2.5-37.6,14.3c-31,11.3-50.2-10.5-52-12.7 c1.3,1.4,11.3,11.4,21.9-6.6c11.4-19.3,23.2-17.3,23.2-17.3c-35.6-18.3-47.4-62.5-47.4-62.5c-19.8-3.5-43-25-43-25 c-15.7,63.1-5.3,116.8,4.7,148.4c4,12.7,9.8,25.5,12,30.1C578.7,657,592.5,636.9,592.5,636.9"/>
+                        <path fill="#1B263B" d="M817,467.4c-1.2-6.5-19.6-96.5-121-98c-105.3-1.5-138.6,89.1-127,101.8 c0,0,17.3,40.3,130.6,42.1c97-6.7,115.5-32.3,117.5-45.6C817,467.7,817,467.6,817,467.4z"/>
+                        <path fill="#1B263B" d="M551,429.7c0,0,15.7-39.7,45.7-53.4c0,0-51.2-13-79-65.6C517.7,310.7,505.3,384.1,551,429.7z"/>
+                        <path fill="#1B263B" d="M831.7,429.7c0,0-15.7-39.7-45.7-53.4c0,0,51.2-13,79-65.6C864.9,310.7,877.4,384.1,831.7,429.7z"/>
+                    </g>
+                </svg>
             </div>
-          </div>
+            <div class="logo-text"><span style="color: var(--nt-white); font-weight: 800; text-transform: uppercase;">NOOB</span><span style="color: var(--nt-primary); font-weight: 300; text-transform: uppercase; margin-left: 2px;">TACO</span></div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="active"><span>Tracker Dashboard</span></a></li>
+                <!-- <li><a href="#"><span>About</span></a></li> -->
+            </ul>
+        </nav>
+    
+    </aside>
+
+    <main>
+        <header>
+            <div>
+                <h1>Midnight Testing Hub</h1>
+                <p class="subtitle">Comprehensive research and compatibility tracking for the Midnight Expansion.</p>
+            </div>
+            <div class="stat-label">Last Updated: Jan 14, 2026</div>
+        </header>
+
+        
+        <section class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-label">Total Addons</span>
+                <span class="stat-value">58</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label" style="color: var(--success)">Working</span>
+                <span class="stat-value" style="color: var(--success)">46</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label" style="color: var(--warning)">Broken / Issues</span>
+                <span class="stat-value" style="color: var(--error)">6</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label" style="color: var(--info)">Reviewed</span>
+                <span class="stat-value" style="color: var(--info)">58</span>
+            </div>
         </section>
 
-        <section id="mechanics">
-          <h2 class="mt-2">3. Guild Housing Mechanics</h2>
-          <ul class="ml-5">
-            <li>After establishing a guild neighborhood, members may need to log out and back in before moving their house into the new neighborhood.</li>
-            <li>Your guild appears at the top of the neighborhood finder list, making it easy for members to find and join.</li>
-          </ul>
-          <p class="text-muted">Important notes:</p>
-          <ul class="ml-5">
-            <li>Members cannot move into a house unless they have pre-purchased the Midnight expansion.</li>
-            <li>Housing is scheduled to be enabled during the prepatch (version 11.2.7); estimated release dates may change.</li>
-          </ul>
-        </section>
 
-        <section id="permissions">
-          <h2 class="mt-2">4. Permissions &amp; Access Control</h2>
-          <p>Permission settings exist in guild ranks, but the full management page is not yet released.</p>
-          <h3>Per house permissions</h3>
-          <ul class="ml-5">
-            <li><strong>Owner:</strong> Full control</li>
-            <li><strong>Friends:</strong> Visit/interact (cannot change settings)</li>
-            <li><strong>Guild Members:</strong> Visit/interact (cannot change settings unless explicitly allowed)</li>
-            <li><strong>Public:</strong> Visit only (no changes)</li>
-          </ul>
-          <div class="bg-gradient-to-b from-white/2 to-transparent p-3.5 rounded-lg">
-            <img class="max-w-full rounded-lg my-3" src="images/house_settings_and_permissions.png" alt="House Settings and Permissions">
-          </div>
-          <h4 id="warband">4.1 Player Warband Access</h4>
-          <p>All characters in a player's warband can visit that player's guild house, even if the character is not in the guild. This is a player-specific feature, not a guild-wide permission.</p>
-        </section>
+        <section class="card">
+            
+            <div class="card-header">
+                <h2 class="card-title">Addon Compatibility List</h2>
+                <div class="filter-controls" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="working">Working</button>
+                    <button class="filter-btn" data-filter="workaround">Workaround</button>
+                    <button class="filter-btn" data-filter="later">Later</button>
+                    <button class="filter-btn" data-filter="broken">Broken</button>
+                    <button class="filter-btn" data-filter="discontinued">Discontinued</button>
+                </div>
+            </div>
+            
+    
+    
+    
+    
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Addon Name</th>
+                            <th>Status</th>
+                            <th>Version</th>
+                            <th>Last Tested</th>
+                            <th>Notes</th>
+                            <th>Links</th>
+                        </tr>
+                    </thead>
+                    <tbody id="addon-table-body">
 
-        <section id="customization">
-          <h2 class="mt-2">5. Customization &amp; Decor</h2>
-          <ul class="ml-5">
-            <li>Houses support customization of floors, walls, and roofs.</li>
-            <li>Decor items can be crafted or purchased from vendors (vendors currently show up to three pages of items).</li>
-            <li>Large gathering spaces (stages, audience seating) exist — useful for events.</li>
-          </ul>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Auctionator</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified 12.0.0 support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/auctionator" target="_blank" class="link-tag">CF</a> <a href="https://github.com/TheMouseNest/Auctionator" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/auctionator" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Baganator</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.1</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified release for Midnight 12.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/baganator" target="_blank" class="link-tag">CF</a> <a href="https://github.com/TheMouseNest/Baganator" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/baganator/" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">BetterBlizzFrames</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.0</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Version 12.0.0 released. Features include buff filtering, pandemic glow, etc.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/betterblizzframes" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Bodify/BetterBlizzFrames" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/betterblizzframes" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">BigWigs Encounter Tools</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">399.9+</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Explicitly supports Midnight 12.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/bigwigs-encounter-tools" target="_blank" class="link-tag">CF</a> <a href="https://github.com/BigWigsMods/BigWigs" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/addons/bigwigs" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">BlizzMove</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">3.7.8</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/blizzmove" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Kiatra/BlizzMove" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Boss Ability Announcement (BAA) for DBM or BigWigs</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.0</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Version 12.0.0 available (Dec 2025).</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/boss-ability-announcement" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Chat Sound Customizer</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">2.6</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Updated Jan 2026.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/chat-sound-customizer" target="_blank" class="link-tag">CF</a> <a href="https://addons.wago.io/addons/chat-sound-customizer" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Cursor Ring</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">1.06</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/cursor-ring-gcd" target="_blank" class="link-tag">CF</a> <a href="https://wago.io/search/cursor+ring" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Details! Damage Meter</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Developers have created a version with stripped-down calculations. Includes a toggle to show new Blizzard damage data with Details skin.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/details" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Tercioo/Details-Damage-Meter" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/details" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Dialogue UI</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">0.6.7 f</td>
+                            <td class="last-tested">2025-10-27</td>
+                            <td class="notes">Verified working on version 0.6.7 f</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/dialogueui" target="_blank" class="link-tag">CF</a> <a href="https://addons.wago.io/addons/dui" target="_blank" class="link-tag">Wago</a> <a href="https://github.com/Peterodox/YUI-Dialogue" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">ElvUI</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Beta</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Intend to work on patch 12.0 support. Basics (anchors, skins, chat, bags, action bars) already patched for beta. Unitframes/Nameplates TBD.</td>
+                            <td class="links"><div class="links-container"><a href="https://github.com/tukui-org/ElvUI" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/elvui" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Farmer</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">3.27.2</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/farmer" target="_blank" class="link-tag">CF</a> <a href="https://addons.wago.io/addons/farmer" target="_blank" class="link-tag">Wago</a> <a href="https://github.com/syndenbock/Farmer" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">HandyNotes</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest + Plugins</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Plugins for Midnight available.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/handynotes" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Nevcairiel/HandyNotes" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/handynotes" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">idTip</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">11.5.25</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes">Will test again later</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/idtip" target="_blank" class="link-tag">CF</a> <a href="https://github.com/silverwind/idTip" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Krowi's Extended Vendor</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Version 12.0 specifically added support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/krowi-extended-vendor" target="_blank" class="link-tag">CF</a> <a href="https://github.com/TheKrowi/Krowi_ExtendedVendor" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Leatrix Maps</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified 12.0.0 support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/leatrix-maps" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Leatrix Plus</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified 12.0.0 support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/leatrix-plus" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">LittleWigs</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Latest version 11.2.7 (Retail) / Updates available. Compatibility subject to API limitations.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/little-wigs" target="_blank" class="link-tag">CF</a> <a href="https://github.com/BigWigsMods/LittleWigs" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/littlewigs" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">LoggerHead</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">LoggerHead Lite lists 12.0.0 support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/loggerhead" target="_blank" class="link-tag">CF</a> <a href="https://github.com/dratr/loggerhead" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Masque</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">11.2.5</td>
+                            <td class="last-tested">2025-10-26</td>
+                            <td class="notes">Verified working on version 11.2.5</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/masque" target="_blank" class="link-tag">CF</a> <a href="https://github.com/SFX-WoW/Masque" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/masque" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">NoobTacoUI</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version"></td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes">See test case: ntui-media-lsm-integration.md. No issues found.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/noobtacoui" target="_blank" class="link-tag">CF</a> <a href="https://wago.io/rN4VRxKD" target="_blank" class="link-tag">Wago</a> <a href="https://github.com/NoobTaco/NoobTacoUI" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">OmniCC</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">11.2.7</td>
+                            <td class="last-tested">2025-10-26</td>
+                            <td class="notes">Verified working on version 11.2.7</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/omnicc" target="_blank" class="link-tag">CF</a> <a href="https://github.com/tullamods/OmniCC" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/addons/omnicc" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">OPiee</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Beta</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Community fixes engaged, likely stable.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/opie" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Pet Battle Scripts</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Recent updates and integration with Rematch (which works).</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/pet-battle-scripts" target="_blank" class="link-tag">CF</a> <a href="https://github.com/axc450/pbs" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/pet-battle-scripts" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Plater Nameplates</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.0+</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Updates available for 12.0 (Dec 2025). Significant API restrictions in Midnight mean reduced customization/scripting compared to retail, but basics work.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/plater-nameplates" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Tercioo/Plater-Nameplates" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/plater" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Plumber</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Explicitly supports Midnight 12.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/plumber" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Peterodox/Plumber" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Postal</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">4.31</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/postal" target="_blank" class="link-tag">CF</a> <a href="https://github.com/wow-vanilla-addons/Postal" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Premade Groups Filter</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">6.9.5</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes">Later testing needed to verify</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/premade-groups-filter" target="_blank" class="link-tag">CF</a> <a href="https://addons.wago.io/addons/premade-groups-filter" target="_blank" class="link-tag">Wago</a> <a href="https://github.com/0xbs/premade-groups-filter" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Pretty Reputation</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Updated Dec 2025. Supports Retail.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/pretty-reputation" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Range Color Skills</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">1.3</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/rangecolorskills" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">RestedXP Guide</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">4.9.9</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Versions 4.9.9+ support Midnight 12.0.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/restedxp-guides" target="_blank" class="link-tag">CF</a> <a href="https://github.com/RestedXP/RestedXP" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/restedxp-guides" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">SharedMedia</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version"></td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes">NTUI-media integration with LibSharedMedia fully tested. No issues found. See test case: ntui-media-lsm-integration.md</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/sharedmedia" target="_blank" class="link-tag">CF</a> <a href="https://github.com/bkader/SharedMedia" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">SilverDragon</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">2026.2</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified 12.0.0 support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/silverdragon" target="_blank" class="link-tag">CF</a> <a href="https://github.com/kemayo/wow-silverdragon" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Shotta</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">2.6.0</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/shotta" target="_blank" class="link-tag">CF</a> <a href="https://github.com/martinbjeldbak/Shotta" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Silence Talking Heads</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">21</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes">Working in Midnight Alpha</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/silence-talking-heads" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Simulationcraft</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.0-01</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes">Working in Midnight</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/simulationcraft" target="_blank" class="link-tag">CF</a> <a href="https://github.com/simulationcraft/simc-addon" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/simulationcraft" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Teleport Menu</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">11.3+</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Version 11.3+ includes Early Midnight Support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/teleport-menu" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Justw8/TeleportMenu" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Syndicator</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.0</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified release for Midnight 12.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/syndicator" target="_blank" class="link-tag">CF</a> <a href="https://github.com/TheMouseNest/Syndicator" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">TipTac Reborn</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">25.12.x</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Updated Dec 2025 for Retail+2. Likely compatible.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/tiptac-reborn" target="_blank" class="link-tag">CF</a> <a href="https://github.com/frozn/TipTac" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">TradeSkillMaster</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Likely compliant as it's an economy addon. Official 12.0 tag pending but expected.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/tradeskill-master" target="_blank" class="link-tag">CF</a> <a href="https://github.com/TradeSkillMaster" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/tradeskill-master" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">Waypoint UI</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">1.2.5</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Version 1.2.5+ supports WoW Retail 12.0.1.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/waypoint-ui" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">WeeklyKnowledge</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Recommended in Midnight guides.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/weeklyknowledge" target="_blank" class="link-tag">CF</a> <a href="https://github.com/DennisRas/WeeklyKnowledge" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/weeklyknowledge" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">WeeklyRewards</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">Latest Available</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Updated for 12.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/weeklyrewards" target="_blank" class="link-tag">CF</a> <a href="https://github.com/cybertk/WeeklyRewards" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/weeklyrewards" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">WIM (WoW Instant Messenger) v3</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">3.14.4+</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Versions 3.14.4+ support 12.0.0. Dev fixing reported bugs.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/wim-3" target="_blank" class="link-tag">CF</a> <a href="https://github.com/WIM-Community/WIM" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/wim-3" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">WoWVoxPacks (Neural2_C): SharedMedia_Causese</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">12.0.0</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Updated Oct/Nov 2025 for 12.0.0.</td>
+                            <td class="links"><div class="links-container"><a href="https://github.com/KogasaPls/WoWVoxPacks" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="working">
+                            <td class="addon-name">XIV_Databar Continued</td>
+                            <td><span class="badge badge-success">Working</span></td>
+                            <td class="addon-version">3.7.6+</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Verified 12.0.0 support.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/xiv_databar-continued" target="_blank" class="link-tag">CF</a> <a href="https://github.com/ZelionGG/XIV_Databar-Continued" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="later">
+                            <td class="addon-name">Edit Mode Expanded</td>
+                            <td><span class="badge badge-info">Later</span></td>
+                            <td class="addon-version">Unknown</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Historically updated.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/edit-mode-expanded" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Rhykes/EditModeExpanded" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="later">
+                            <td class="addon-name">Kaliel's Tracker (The War Within) ... Quest / World Quest / Achievement</td>
+                            <td><span class="badge badge-info">Later</span></td>
+                            <td class="addon-version">7.14.0</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Developers active.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/kaliels-tracker-the-war-within" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="later">
+                            <td class="addon-name">Krowi's Achievement Filter</td>
+                            <td><span class="badge badge-info">Later</span></td>
+                            <td class="addon-version">86.2</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Developers active.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/krowi-achievement-filter" target="_blank" class="link-tag">CF</a> <a href="https://github.com/TheKrowi/Krowi_AchievementFilter" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="later">
+                            <td class="addon-name">Profession Shopping List</td>
+                            <td><span class="badge badge-info">Later</span></td>
+                            <td class="addon-version">11.2.0-005</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/profession-shopping-list" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Slackluster/ProfessionShoppingList" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/profession-shopping-list" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="later">
+                            <td class="addon-name">Stat Priority</td>
+                            <td><span class="badge badge-info">Later</span></td>
+                            <td class="addon-version">Unknown</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Stat priorities change with every expansion.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/stat-priority" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Vampyr7878/StatPriority" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/RaN0w9Gj" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="discontinued">
+                            <td class="addon-name">BlizzHUDTweaks</td>
+                            <td><span class="badge badge-discontinued">Discontinued</span></td>
+                            <td class="addon-version">1.57.0 (Retail)</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Latest version 1.57.0 is for 11.2.7.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/blizzhudtweaks" target="_blank" class="link-tag">CF</a> <a href="https://github.com/PhenomDevel/BlizzHUDTweaks" target="_blank" class="link-tag">GH</a> <a href="https://addons.wago.io/addons/blizzhudtweaks" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="broken">
+                            <td class="addon-name">Already Known?</td>
+                            <td><span class="badge badge-error">Broken</span></td>
+                            <td class="addon-version">1.85</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">No 12.0 update found.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/alreadyknown" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Zorkas/AlreadyKnown" target="_blank" class="link-tag">GH</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="later">
+                            <td class="addon-name">Cell</td>
+                            <td><span class="badge badge-info">Later</span></td>
+                            <td class="addon-version">Discord Update</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">"After beta 6 goes live later this month, I'll give it another try... Cell won't be able to make it in time for the pre‑patch version" - enderneko (1/12/2026).</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/cell" target="_blank" class="link-tag">CF</a> <a href="https://github.com/enderneko/Cell" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/cell" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="broken">
+                            <td class="addon-name">World Quests List</td>
+                            <td><span class="badge badge-error">Broken</span></td>
+                            <td class="addon-version">117</td>
+                            <td class="last-tested">2025-10-05</td>
+                            <td class="notes"></td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/world-quests-list" target="_blank" class="link-tag">CF</a> <a href="https://addons.wago.io/addons/world-quests-list" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="discontinued">
+                            <td class="addon-name">Collectinator</td>
+                            <td><span class="badge badge-discontinued">Discontinued</span></td>
+                            <td class="addon-version">78</td>
+                            <td class="last-tested">2026-01-14</td>
+                            <td class="notes">Last update 2020.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/collectinator" target="_blank" class="link-tag">CF</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="discontinued">
+                            <td class="addon-name">Hekili</td>
+                            <td><span class="badge badge-discontinued">Discontinued</span></td>
+                            <td class="addon-version"></td>
+                            <td class="last-tested">2025-10-03</td>
+                            <td class="notes">The Hekili developer has announced there will be no update for Midnight.</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/hekili-priority-helper" target="_blank" class="link-tag">CF</a> <a href="https://github.com/Hekili/hekili" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/Hekili" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                        <tr class="addon-row" data-category="discontinued">
+                            <td class="addon-name">WeakAuras</td>
+                            <td><span class="badge badge-discontinued">Discontinued</span></td>
+                            <td class="addon-version"></td>
+                            <td class="last-tested">2025-10-03</td>
+                            <td class="notes">The WeakAuras team has announced they will not be updating for Midnight. See [source](https://www.patreon.com/posts/weakauras-x-140349416)</td>
+                            <td class="links"><div class="links-container"><a href="https://www.curseforge.com/wow/addons/weakauras-2" target="_blank" class="link-tag">CF</a> <a href="https://github.com/WeakAuras/WeakAuras2" target="_blank" class="link-tag">GH</a> <a href="https://wago.io/" target="_blank" class="link-tag">Wago</a> </div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
+    
 
-        <section id="gathering">
-          <h2 class="mt-2">6. Gathering &amp; Crafting</h2>
-          <ul class="ml-5">
-            <li>The Lumberjack skill is required to gather lumber for housing items.</li>
-            <li>Learn Lumberjack from Lestia Goldenstrike (in town).</li>
-            <li>Example quest rewards: Lumberjack skill, coin, and XP.</li>
-            <li>An axe is required for lumber gathering.</li>
-          </ul>
-          <div class="bg-gradient-to-b from-white/2 to-transparent p-3.5 rounded-lg">
-            <img class="max-w-full rounded-lg my-3" src="images/lumberjack-quest.png" alt="Lumberjack quest">
-            <img class="max-w-full rounded-lg my-3" src="images/lumberjack-quest2.png" alt="Lumberjack axe">
-            <img class="max-w-full rounded-lg my-3" src="images/lumberjack-quest3.png" alt="Lumberjack quest text">
-          </div>
-        </section>
+</main>
 
-        <section id="endeavors">
-          <h2 class="mt-2">7. Endeavors</h2>
-          <p>Endeavors will not be required for participation in guild housing. Participation is voluntary, and we expect many members may opt in once the system is live.</p>
-        </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const rows = document.querySelectorAll('.addon-row');
 
-        <section id="recommendations">
-          <h2 class="mt-2">8. Recommendations for Large Guilds</h2>
-          <h3>8.1 Neighborhood Layers &amp; Lot Allotment</h3>
-          <ul class="ml-5">
-            <li>Only one main guild neighborhood (NH) exists. If demand exceeds 55 plots, the system creates additional layers (overflow).</li>
-            <li>The exact occupancy threshold that triggers a new layer is not confirmed (devs mentioned ~80% in some statements). Leadership should monitor official updates.</li>
-          </ul>
-          <p class="text-muted">Considerations and suggested approach:</p>
-          <ol class="ml-5">
-            <li>Assign officers to monitor layer occupancy and member distribution.</li>
-            <li>Encourage members to consolidate into the most active layers to preserve community feel.</li>
-            <li>Create a clear lot-allocation policy (e.g., first-come, officer approval, event-based rewards).</li>
-            <li>Communicate plot availability and benefits of consolidation to members regularly.</li>
-            <li>Use events to encourage movement into active layers.</li>
-          </ol>
-        </section>
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
 
-        <section id="questions">
-          <h2 class="mt-2">9. Open Questions &amp; To-Do</h2>
-          <ul class="ml-5">
-            <li>Await release of the full guild management page for housing.</li>
-            <li>Test permission settings for Friends, Guild Members, and Public when the UI is available.</li>
-            <li>Monitor for additional decor, crafting, and event-related features in future updates.</li>
-          </ul>
-        </section>
+                    const filter = btn.getAttribute('data-filter');
 
-        <section id="calltoaction">
-          <h2 class="mt-2">10. Call to Action — Member Participation</h2>
-          <h3>10.1 PTR Participation</h3>
-          <p>If another PTR (Public Test Realm) event is available, we encourage as many members as possible to log in and be invited into the PTR guild. This helps test layering and plot visibility.</p>
-          <h3>10.2 Open Beta Participation</h3>
-          <ul class="ml-5">
-            <li>Open Beta requires pre-purchasing the Midnight expansion.</li>
-            <li>We will need an initial group to create the guild and establish housing (approx. 5 to create + 5 additional to set up housing). Afterward, invite interested members to the Beta guild for broader testing.</li>
-          </ul>
-        </section>
-
-        <section id="policy">
-          <h2 class="mt-2">11. Guild Activity &amp; Retention Policy (Draft) (Alliance Guild)</h2>
-          <p>Effective date: TBD — policy to be applied with the Midnight expansion launch.</p>
-          <h3>11.1 Purpose</h3>
-          <p>Keep the Guild Neighborhood active while providing a fair process for members who are inactive for extended periods.</p>
-          <h3>11.2 Members with Guild Housing</h3>
-          <ul class="ml-5">
-            <li>Rule: Members who occupy a guild housing plot and are inactive for two (2) months may be removed from the guild roster to free plots for active members. (Details subject to available in-game tools and final design.)</li>
-            <li>Your property is not lost — the game moves the home and contents into secure housing storage.</li>
-            <li>Returning members can request a guild invite and reclaim their house from storage when a plot is available.</li>
-          </ul>
-          <h3>11.3 Members without Guild Housing</h3>
-          <ul class="ml-5">
-            <li>Rule: Members without a housing plot may be removed for one (1) year of inactivity.</li>
-          </ul>
-          <h3>11.4 Returning to the Guild</h3>
-          <p>Removal for inactivity is not punitive. Contact officers or the Guild Master for re-invitation — progress and property is preserved.</p>
-        </section>
-
-        <section id="thread">
-          <h2 class="mt-2">12. Alliance Housing Thread &amp; Ongoing Discussion</h2>
-          <p>Create a Housing Thread in <code>#Alliance</code> for questions and ongoing updates after the meeting. This report will be updated as new information becomes available.</p>
-        </section>
-
-        <section id="qa">
-          <h2 class="mt-2">Questions and Answers</h2>
-          <ul class="ml-5">
-            <li><strong>Q: When will guild housing be available?</strong><br>
-            A: Guild housing is scheduled to be enabled during the prepatch (version 11.2.7), but release dates may change. Watch for official updates.</li>
-            <li><strong>Q: Can I move into a guild house if I haven’t pre-purchased Midnight?</strong><br>
-            A: No, only members who have pre-purchased the Midnight expansion can move into a guild house.</li>
-            <li><strong>Q: What happens if I am removed for inactivity?</strong><br>
-            A: Your house and contents are moved to secure storage. You can reclaim your house when you return and a plot is available.</li>
-            <li><strong>Q: How do I get the Lumberjack skill?</strong><br>
-            A: Learn Lumberjack from Lestia Goldenstrike in town. You’ll need an axe to gather lumber for housing items.</li>
-            <li><strong>Q: Can all my characters visit my guild house?</strong><br>
-            A: Yes, all characters in your warband can visit your guild house, even if they are not in the guild.</li>
-            <li><strong>Q: What if all 55 plots are full?</strong><br>
-            A: The system creates additional layers (overflow neighborhoods) if demand exceeds 55 plots. Leadership will monitor and communicate availability.</li>
-            <li><strong>Q: Where can I ask more questions?</strong><br>
-            A: Use the #Alliance Housing Thread for ongoing questions and updates.</li>
-            <li><strong>Q: What do I do if my Horde and Alliance characters are all in the Alliance neighborhood? Can I still create a Horde house in a Horde neighborhood?</strong><br>
-            A: Yes. Any Horde character can create a house in a Horde neighborhood, whether it is a private house or part of a Horde guild neighborhood. If your Horde character is in a Horde guild, they can join the Horde guild neighborhood. The same applies for Alliance characters and neighborhoods. Your characters are not restricted by where your other faction characters have houses; each character can create or join a house in their own faction's neighborhood as long as they meet the requirements.</li>
-          </ul>
-        </section>
-
-        <footer class="mt-4.5 text-muted text-sm">
-          <p>Prepared by the Midnight Housing Testing Team</p>
-        </footer>
-      </main>
-    </div>
-  </div>
+                    rows.forEach(row => {
+                        const category = row.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    
 </body>
 </html>
